@@ -14,12 +14,14 @@
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/form.scss";
+
 @font-face {
   font-family: "Opensans";
   src: url("../mishka/source/fonts/opensans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Opensans";
   src: url("../mishka/source/fonts/opensansbold.woff2") format("woff2");
@@ -48,7 +50,7 @@ a {
 body {
   width: 320px;
   margin: 0 auto;
-  font-family: "Opensasns", Arial, sans-serif;
+  font-family: "Opensasns", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;

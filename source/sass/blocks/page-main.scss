@@ -12,6 +12,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
   @include font-bold(27, 30, hsl(345, 100, 1));
   text-align: center;
 

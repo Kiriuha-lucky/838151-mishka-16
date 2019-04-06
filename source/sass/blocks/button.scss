@@ -7,12 +7,14 @@
   padding-bottom: 17px;
   text-align: center;
   border: 2px solid rgba(68, 68, 68, 1);
+
   @include font-bold(17, 20, rgba(68, 68, 68, 1));
   text-transform: uppercase;
 
   &:focus,
   &:hover {
     background-color: rgba(68, 68, 68, 1);
+
     @include font-bold(17, 20, rgba(255, 255, 255, 1));
   }
 

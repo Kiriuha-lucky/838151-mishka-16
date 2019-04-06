@@ -16,8 +16,10 @@
 
 .product-snippet__properties {
   width: 204px;
+
   @include null;
   margin: 0 auto;
+
   @include font-normal(13, 30, rgba(68,68,68,1));
   padding-top: 20px;
   border-bottom: 1px solid rgba(237, 237, 237, 1);
@@ -25,17 +27,20 @@
 
 .product-snippet__price {
   position: relative;
+
   @include null;
   margin: 0 auto;
   width: 204px;
   margin-top: 25px;
   padding-bottom: 25px;
+
   @include font-normal(15, 24, rgba(0, 0, 0, 1));
   padding-top: 20px;
 }
 
 .product-snippet__button {
   position: absolute;
+
   @include null;
   width: 30px;
   height: 30px;

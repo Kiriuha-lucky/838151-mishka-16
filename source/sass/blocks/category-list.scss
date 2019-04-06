@@ -11,6 +11,7 @@
   padding: 30px 110px 30px 30px;
   background-color: rgba(99, 209, 187, 1);
   cursor: pointer;
+
   @include font-bold(19, 24, rgba(255,255,255,1));
 
   &::after {
@@ -33,7 +34,7 @@
   }
 
   &:active {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
 
   &::after:focus,
@@ -59,7 +60,7 @@
   }
 
   &:active {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
     opacity: 0.3;
   }
 }

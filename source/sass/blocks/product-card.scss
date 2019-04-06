@@ -22,6 +22,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(229, 229, 229, 1);
+
   @include font-normal(15, 20, rgba(68,68,68,1));
 }
 
@@ -33,6 +34,7 @@
   display: block;
   padding-top: 25px;
   padding-bottom: 25px;
+
   @include font-bold(17, 24, rgba(68,68,68,1));
   text-align: center;
 }
