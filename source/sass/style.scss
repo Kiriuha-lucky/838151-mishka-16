@@ -1,0 +1,58 @@
+@import "mixins.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/button.scss";
+@import "blocks/modal.scss";
+@import "blocks/category-list.scss";
+@import "blocks/product-card.scss";
+@import "blocks/about-us.scss";
+@import "blocks/product-snippet.scss";
+@import "blocks/catalog.scss";
+@import "blocks/production.scss";
+@import "blocks/slider.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/form.scss";
+@font-face {
+  font-family: "Opensans";
+  src: url("../mishka/source/fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Opensans";
+  src: url("../mishka/source/fonts/opensansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "Opensasns", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0;
+  // outline: 3px solid blue;
+}

@@ -1,0 +1,38 @@
+.product-card {
+  width: 260px;
+}
+
+.product-card__title {
+  @include font-bold(25, 30, rgba(0,0,0,1));
+}
+
+.product-card__tag {
+  @include font-bold(17, 20, rgba(99,209,187,1));
+  text-transform: uppercase;
+}
+
+.product-card__description {
+  @include font-normal(15, 24, rgba(68,68,68,1));
+}
+
+.product-card__property,
+.product-card__value {
+  text-align: left;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+  @include font-normal(15, 20, rgba(68,68,68,1));
+}
+
+.product-card__image {
+  margin-top: 28px;
+}
+
+.product-card__price {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @include font-bold(17, 24, rgba(68,68,68,1));
+  text-align: center;
+}

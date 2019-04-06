@@ -1,0 +1,27 @@
+.reviews {
+  width: 260px;
+}
+
+.reviews__slider {
+  width: 260px;
+}
+
+.reviews__title {
+  @include font-bold(25, 30, rgba(0, 0, 0, 1));
+}
+
+.reviews__text {
+  @include font-normal(15, 30, rgba(68, 68, 68, 1));
+}
+
+.reviews__author-name {
+  @include font-bold(17, 24, rgba(0, 0, 0, 1));
+}
+
+.reviews__author-user-name {
+  @include font-normal(17, 30, rgba(68, 68, 68, 1));
+}
+
+.reviews__write-link {
+  margin-top: 38px;
+}
