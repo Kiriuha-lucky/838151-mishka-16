@@ -1,24 +1,27 @@
 .button {
-  margin: 0;
-  padding: 0;
+  @include btn-reset;
   display: block;
-  width: 260px;
+
+  width: 256px;
   padding-top: 17px;
   padding-bottom: 17px;
-  text-align: center;
-  border: 2px solid rgba(68, 68, 68, 1);
 
-  @include font-bold(17, 20, rgba(68, 68, 68, 1));
+  text-align: center;
   text-transform: uppercase;
+
+  color: black;
+  border: 2px solid rgb(68, 68, 68);
+
+  font-size: 17px;
+  line-height: 20px;
 
   &:focus,
   &:hover {
-    background-color: rgba(68, 68, 68, 1);
-
-    @include font-bold(17, 20, rgba(255, 255, 255, 1));
+    color: white;
+    background-color: rgb(68, 68, 68);
   }
 
   &:active {
-    @include font-bold(17, 20, rgba(255, 255, 255, 0.3));
+    color: rgba(255, 255, 255, 0.3);
   }
 }

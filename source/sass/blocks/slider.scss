@@ -1,18 +1,17 @@
 .slider__list {
-  @include null;
+  @include list-reset;
   list-style: none;
 }
 
 .slider-btn {
-  margin-top: 38px;
+  @include btn-reset;
+  margin-top: 30px;
   display: inline-block;
   width: 127px;
   height: 50px;
-  background: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border: 1px solid rgba(236, 236, 236, 1);
-  font-size: 0;
 
   &--prev {
     background-image: url("../img/icon-left-arrow.svg");

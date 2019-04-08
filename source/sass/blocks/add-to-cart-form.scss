@@ -1,0 +1,79 @@
+.add-to-cart-form {
+  position: absolute;
+  top: 50%;
+  display: none;
+  width: 260px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.61);
+}
+
+.add-to-cart-form__title {
+  @include list-reset;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 25px;
+}
+
+.add-to-cart-form__group {
+  @include list-reset;
+  border: none;
+}
+
+.add-to-cart-form__group-title {
+  @include list-reset;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.add-to-cart-form__size-list {
+  @include list-reset;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.add-to-cart-form__size-label {
+  display: inline-block;
+  width: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid rgb(236, 236, 236);
+  text-align: center;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgb(199, 199, 199);
+  }
+
+  &:active {
+    border: 2px solid rgb(98, 209, 186);
+  }
+}
+
+.add-to-cart-form__button {
+  border: none;
+  background-color: rgb(99, 209, 187);
+  color: white;
+}
+
+.add-to-cart-form__radio:checked + label {
+  border: 2px solid rgb(98, 209, 186);
+}

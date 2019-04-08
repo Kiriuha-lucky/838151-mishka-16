@@ -7,21 +7,39 @@
 }
 
 .reviews__title {
-  @include font-bold(25, 30, rgba(0, 0, 0, 1));
+  @include list-reset;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 35px;
 }
 
 .reviews__text {
-  @include font-normal(15, 30, rgba(68, 68, 68, 1));
+  @include list-reset;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  margin-bottom: 40px;
 }
 
 .reviews__author-name {
-  @include font-bold(17, 24, rgba(0, 0, 0, 1));
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 15px;
 }
 
 .reviews__author-user-name {
-  @include font-normal(17, 30, rgba(68, 68, 68, 1));
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+  margin-bottom: 35px;
 }
 
-.reviews__write-link {
-  margin-top: 38px;
+.slider-btn {
+  margin-bottom: 38px;
 }

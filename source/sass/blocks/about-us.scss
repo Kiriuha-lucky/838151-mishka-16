@@ -1,33 +1,53 @@
 .about-us {
   width: 260px;
+
+  color: rgba(0, 0, 0, 1);
+
+  font-weight: 600;
 }
 
 .about-us__title {
-  @include font-bold(25, 30, rgba(0,0,0,1));
+  @include list-reset;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
 
 .about-us__list {
-  @include null;
-  list-style: none;
+  @include list-reset;
 }
 
 .about-us__item {
-  @include font-bold(17, 20, rgba(0,0,0,1));
+  position: relative;
+
+  padding-top: 60px;
+  margin-bottom: 20px;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+
     display: block;
-    content: "";
+
     width: 60px;
     height: 45px;
+
+    content: "";
+
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
 
   &--flower::before {
     background-image: url("../img/icon-feature-flower.svg");
-    svg-fill: fill="#63d1bb";
   }
 
   &--money::before {

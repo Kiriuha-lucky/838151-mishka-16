@@ -1,7 +1,23 @@
-.page-header__logo-image {
+.page-header {
   width: 320px;
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__nav {
@@ -9,25 +25,24 @@
 }
 
 .page-header__nav-toggle {
+  @include btn-reset;
   right: 15px;
-  top: -65px;
+  top: -55px;
   position: absolute;
-  padding: 0;
-  border: none;
-  background-color: transparent;
   content: "";
   width: 40px;
   height: 40px;
   cursor: pointer;
   background-image: url("../img/icon-menu-open.svg");
-  background-position: 50% 50%;
+  background-position: center center;
   background-repeat: no-repeat;
-  font-size: 0;
 }
 
 .page-header__nav-list {
-  @include null;
-  list-style: none;
+  @include list-reset;
+}
+
+.page-header__nav-link {
   text-align: center;
 }
 
@@ -35,9 +50,21 @@
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-top: 1px solid rgba(236, 236, 236, 1);
+  padding-left: 70px;
+  padding-right: 70px;
+  border-top: 1px solid rgb(236, 236, 236);
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  font-weight: 700;
 
-  @include font-bold(17, 24, rgba(0, 0, 0, 1));
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .page-header__nav-link--search {

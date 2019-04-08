@@ -1,22 +1,15 @@
-@mixin font-normal($size: 15, $interval: 30, $color: black) {
-  font-family: "Opensans", "Arial", sans-serif;
-  font-size: $size+px;
-  line-height: $interval+px;
-  font-weight: normal;
-  color: $color;
-  letter-spacing: 0;
-}
-
-@mixin font-bold($size: 15, $interval: 30, $color: black) {
-  font-family: "Opensans", "Arial", sans-serif;
-  font-size: $size+px;
-  line-height: $interval+px;
-  font-weight: bold;
-  color: $color;
-  letter-spacing: 0;
-}
-
-@mixin null {
+@mixin list-reset {
   margin: 0;
   padding: 0;
+
+  list-style: none;
+}
+
+@mixin btn-reset {
+  border: none;
+  background-color: transparent;
+}
+
+@mixin outline {
+  outline: 2px solid green;
 }
