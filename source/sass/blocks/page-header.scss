@@ -44,9 +44,6 @@
 
 .page-header__nav-link {
   text-align: center;
-}
-
-.page-header__nav-link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -62,6 +59,7 @@
   &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
