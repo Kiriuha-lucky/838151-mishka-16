@@ -2,6 +2,11 @@
   margin: 0 auto;
 }
 
+.page-main__wrapper {
+  margin: 0 auto;
+  width: 260px;
+}
+
 .page-main__title {
   margin: 0;
   display: block;
@@ -40,7 +45,6 @@
 }
 
 .page-main__reviews {
-  margin: 0 auto;
   margin-bottom: 40px;
 
   &::after {
@@ -76,7 +80,6 @@
 }
 
 .page-main__product-card {
-  margin: 0 auto;
   margin-bottom: 30px;
 
   &::after {
@@ -97,7 +100,6 @@
 }
 
 .page-main__about-us {
-  margin: 0 auto;
   margin-bottom: 55px;
 }
 

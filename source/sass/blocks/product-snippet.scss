@@ -39,6 +39,7 @@
 }
 
 .product-snippet__price {
+  position: relative;
   margin: 0 auto;
   width: 204px;
   padding-bottom: 30px;
@@ -59,8 +60,8 @@
 
   width: 30px;
   height: 30px;
-  top: 50%;
-  transform: translateY(-100%);
+  top: 0;
+  // transform: translateY(-100%);
   right: 0;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
