@@ -1,0 +1,72 @@
+.about-us {
+  width: 260px;
+
+  color: black;
+}
+
+.about-us__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  position: relative;
+
+  padding-top: 60px;
+  margin-bottom: 20px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -10px;
+
+    display: block;
+
+    width: 60px;
+    height: 45px;
+
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--flower::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--heart::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--ball::before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--rocket::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--present::before {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}

@@ -1,0 +1,27 @@
+.button {
+  @include btn-reset;
+  display: block;
+
+  width: 256px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: black;
+  border: 2px solid #444444;
+
+  font-size: 17px;
+  line-height: 20px;
+
+  &:focus,
+  &:hover {
+    color: white;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

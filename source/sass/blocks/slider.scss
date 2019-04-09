@@ -1,0 +1,23 @@
+.slider__list {
+  @include list-reset;
+  list-style: none;
+}
+
+.slider__btn {
+  @include btn-reset;
+  margin-top: 30px;
+  display: inline-block;
+  width: 127px;
+  height: 50px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #ececec;
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+}

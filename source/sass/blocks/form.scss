@@ -1,0 +1,155 @@
+.form {
+  width: 260px;
+  font-size: 17px;
+  line-height: 18px;
+  color: black;
+  font-weight: 700;
+}
+
+.form__group {
+  padding: 0;
+  margin-left: 0;
+  border: none;
+  border-top: 1px solid #63d1bb;
+}
+
+.form__group-title {
+  margin: 0;
+  display: block;
+
+  padding-right: 30px;
+  margin-bottom: 25px;
+
+  color: #63d1bb;
+}
+
+.form__list {
+  @include list-reset;
+  list-style: none;
+}
+
+.form__label {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+
+  padding-left: 60px;
+  cursor: pointer;
+}
+
+.form__label--radio {
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: -7px;
+    left: 12px;
+    background-color: #62d1ba;
+    opacity: 0;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -19px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active::before {
+    border: 2px solid #cecece;
+  }
+}
+
+.form__radio:checked + label::after {
+  opacity: 1;
+}
+
+.form__label--checkbox {
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    left: 10px;
+    background-image: url("../img/icon-tick.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -19px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 2px solid black;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active::before {
+    border: 2px solid #cecece;
+  }
+}
+
+.form__checkbox:checked + label::after {
+  opacity: 1;
+}
+
+.form__label--text {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.form__group-input {
+  width: 260px;
+  border: none;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+
+
+  font-size: inherit;
+  line-height: inherit;
+  border-bottom: 2px solid black;
+}
+
+.form__textarea {
+  width: 226px;
+  padding: 15px;
+  margin-bottom: 20px;
+
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+  border: 2px solid black;
+}
+
+.form__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
