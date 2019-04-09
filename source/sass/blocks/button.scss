@@ -10,7 +10,7 @@
   text-transform: uppercase;
 
   color: black;
-  border: 2px solid rgb(68, 68, 68);
+  border: 2px solid #444444;
 
   font-size: 17px;
   line-height: 20px;
@@ -18,7 +18,7 @@
   &:focus,
   &:hover {
     color: white;
-    background-color: rgb(68, 68, 68);
+    background-color: #444444;
   }
 
   &:active {

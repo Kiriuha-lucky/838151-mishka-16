@@ -46,16 +46,16 @@
 
   &:hover,
   &:focus {
-    background-color: rgb(89, 213, 188);
+    background-color: #59d5bc;
   }
 
   &:active {
-    background-color: rgb(89, 213, 188);
+    background-color: #59d5bc;
     color: rgba(255, 255, 255, 0.3);
   }
 
   &--toys {
-    background-color: rgb(86, 195, 178);
+    background-color: #56c3b2;
   }
 
   &--toys::after {
@@ -64,11 +64,11 @@
 
   &--toys:hover,
   &--toys:focus {
-    background-color: rgb(70, 193, 174);
+    background-color: #46c1ae;
   }
 
   &--toys:active {
-    background-color: rgb(70, 193, 174);
+    background-color: #46c1ae;
     color: rgba(255, 255, 255, 0.3);
   }
 }

@@ -1,15 +1,14 @@
 .about-us {
   width: 260px;
 
-  color: rgba(0, 0, 0, 1);
-
-  font-weight: 600;
+  color: black;
 }
 
 .about-us__title {
-  @include list-reset;
+  margin: 0;
   font-size: 25px;
   line-height: 25px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -25,6 +24,7 @@
 
   font-size: 17px;
   line-height: 20px;
+  font-weight: 600;
 
   &:last-child {
     margin-bottom: 0;

@@ -7,7 +7,7 @@
 }
 
 .reviews__title {
-  @include list-reset;
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -16,11 +16,11 @@
 }
 
 .reviews__text {
-  @include list-reset;
+  margin: 0;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: #444444;
   margin-bottom: 40px;
 }
 
@@ -36,7 +36,7 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
-  color: rgb(68, 68, 68);
+  color: #444444;
   margin-bottom: 35px;
 }
 
