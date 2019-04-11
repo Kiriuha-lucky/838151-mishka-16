@@ -21,3 +21,25 @@
     background-image: url("../img/icon-right-arrow.svg");
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .slider__btn-group {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .slider__btn {
+    margin: 0;
+    width: 83.5px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__btn-group {
+    right: 0;
+    bottom: 50px;
+  }
+}

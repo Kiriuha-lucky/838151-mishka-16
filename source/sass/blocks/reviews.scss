@@ -42,4 +42,53 @@
 
 .slider-btn {
   margin-bottom: 38px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+    width: 668px;
+    min-height: 377px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 55px;
+  }
+
+  .reviews__text {
+    width: 668px;
+    font-size: 17px;
+  }
+
+  .reviews__write-link {
+    width: 175px;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 825px;
+    padding-left: 175px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__write-link {
+    right: 0;
+  }
 }

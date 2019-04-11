@@ -8,7 +8,7 @@
 }
 
 .page-main__title {
-  margin: 0;
+  margin: 0 auto;
   display: block;
 
   width: 260px;
@@ -45,23 +45,23 @@
 }
 
 .page-main__reviews {
-  margin-bottom: 40px;
+  margin-bottom: 160px;
 
-  &::after {
-    display: block;
-
-    width: 320px;
-    height: 5px;
-    margin-left: -28px;
-    margin-top: 35px;
-
-    content: "";
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-size: contain;
-  }
+  // &::after {
+  //   display: block;
+  //
+  //   width: 320px;
+  //   height: 5px;
+  //   margin-left: -28px;
+  //   margin-top: 35px;
+  //
+  //   content: "";
+  //
+  //   background-image: url("../img/bg-zigzag-line.svg");
+  //   background-repeat: repeat-x;
+  //   background-position: 0 0;
+  //   background-size: contain;
+  // }
 }
 
 .page-main__text {
@@ -76,33 +76,115 @@
 }
 
 .page-main__section-nav {
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .page-main__product-card {
   margin-bottom: 30px;
 
-  &::after {
-    display: block;
-
-    width: 320px;
-    height: 5px;
-    margin-left: -28px;
-    margin-top: 35px;
-
-    content: "";
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-size: contain;
-  }
+  // &::after {
+  //   display: block;
+  //
+  //   width: 100%;
+  //   height: 7px;
+  //
+  //   margin-top: 35px;
+  //
+  //   content: "";
+  //
+  //   background-image: url("../img/bg-zigzag-line.svg");
+  //   background-repeat: repeat-x;
+  //   background-position: 0 0;
+  //   background-size: contain;
+  // }
 }
 
 .page-main__about-us {
+  margin: 0 auto;
   margin-bottom: 55px;
 }
 
 .catalog__product-snippet {
   margin-bottom: 30px;
+}
+
+.page-main__category-list {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 458px;
+    height: 591px;
+    padding-top: 155px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 0;
+    margin-top: -45px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px auto;
+    font-size: 43px;
+    line-height: 50px;
+
+    &--inner-page {
+      width: 668px;
+      height: auto;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 20px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: bottom;
+      border-top: 1px solid #dfdfdf;
+    }
+  }
+
+  .page-main__wrapper {
+    width: 668px;
+  }
+
+  .page-main__reviews {
+    margin-left: -50px;
+  }
+
+  .page-main__category-list {
+    margin-bottom: 50px;
+  }
+
+  .page-main__product-card {
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 630px;
+    padding-left: 260px;
+    padding-right: 260px;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: 1150px auto;
+    font-size: 53px;
+    line-height: 57px;
+
+    &--inner-page {
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: bottom;
+    }
+  }
+
+  .page-main__wrapper {
+    width: 1050px;
+  }
+
+  .page-main__category-list {
+    margin-bottom: 70px;
+  }
+
+  .page-main__reviews {
+    margin-left: 0;
+  }
 }

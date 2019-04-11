@@ -1,5 +1,6 @@
 .category-list {
   @include list-reset;
+  width: 320px;
   font-size: 19px;
   line-height: 24px;
   color: white;
@@ -70,5 +71,31 @@
   &--toys:active {
     background-color: #46c1ae;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .category-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .category-list__link {
+    width: 144px;
+    padding-right: 165px;
+    font-size: 20px;
+    line-height: 30px;
+    flex-grow: 1;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category-list__link {
+    width: 145px;
+    padding-right: 350px;
   }
 }
