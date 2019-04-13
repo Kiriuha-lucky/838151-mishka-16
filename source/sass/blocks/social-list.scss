@@ -2,35 +2,38 @@
   @include list-reset;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: 260px;
 }
 
 .social-list__link {
-  display: block;
+  margin-left: 40px;
 
   width: 50px;
   height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  text-align: center;
+  vertical-align: middle;
 
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
-  }
-
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
-  }
-
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+  &first-child {
+    margin-left: 0;
   }
 }
 
-.social__icon {
-  fill: "#46c1ae";
+.social-list__item:first-child .social-list__link {
+  margin-left: 0;
+}
+
+.social-list__icon:hover,
+.social-list__icon:focus {
+  path {
+    fill: #46c1ae;
+  }
+}
+
+.social-list__icon:active {
+  path {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }

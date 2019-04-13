@@ -1,6 +1,7 @@
 .contacts {
   position: relative;
   width: 320px;
+  outline: 2px solid blue;
 
   color: rgb(68, 68, 68);
 
@@ -75,6 +76,8 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    display: flex;
+    flex-direction: column;
     width: 350px;
     min-height: 382px;
     padding-left: 175px;
@@ -102,11 +105,8 @@
     right: 0;
   }
 
-  .contacts__table {
-    margin-bottom: 85px;
-  }
-
   .contacts__link {
+    margin-top: auto;
     width: 230px;
   }
 }

@@ -4,7 +4,7 @@ a {
 
 body {
   position: relative;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   font-family: "Opensasns", "Arial", sans-serif;
   font-size: 15px;
@@ -12,17 +12,17 @@ body {
   font-weight: 400;
   color: black;
   letter-spacing: 0;
-  outline: 3px solid blue;
+  outline: 2px solid blue;
 }
 
 @media (min-width: $tablet-width) {
-  .body {
+  body {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .body {
+  body {
     width: 1150px;
   }
 }
