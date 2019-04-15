@@ -23,11 +23,11 @@
 }
 
 
-@media (min-width: $tablet-width) {
+@include tablet {
   .slider__btn-group {
     position: absolute;
     right: 50px;
-    bottom: 50px;
+    bottom: 11px;
   }
 
   .slider__btn {
@@ -37,7 +37,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop {
   .slider__btn-group {
     right: 0;
     bottom: 50px;

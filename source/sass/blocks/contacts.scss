@@ -25,7 +25,7 @@
   margin: 0;
   margin-right: 30px;
   margin-left: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 
   color: black;
 
@@ -36,19 +36,20 @@
 .contacts__table {
   margin-right: 30px;
   margin-left: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 
   vertical-align: top;
 }
 
 .contacts__method {
-  padding-right: 30px;
+  padding-right: 23px;
 
   text-align: left;
   vertical-align: top;
 }
 
 .contacts__value {
+  padding-bottom: 26px;
   vertical-align: top;
 }
 
@@ -66,7 +67,7 @@
 }
 
 .contacts__map {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .contacts__link {
@@ -74,27 +75,38 @@
   margin-left: 30px;
 }
 
-@media (min-width: $desktop-width) {
+@include desktop {
   .contacts {
     display: flex;
     flex-direction: column;
-    width: 350px;
-    min-height: 382px;
-    padding-left: 175px;
+    width: 354px;
+    min-height: 385px;
+    padding-left: 171px;
     padding-right: 525px;
-    padding-top: 75px;
+    padding-top: 73px;
 
     &::after {
       display: block;
-      top: 60px;
-      left: 60px;
+      top: 61px;
+      left: 63px;
     }
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 60px;
+    margin-bottom: 44px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contacts__table {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contacts__table br {
+    display: none;
   }
 
   .contacts__map {
@@ -108,18 +120,20 @@
   .contacts__link {
     margin-top: auto;
     width: 230px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@include tablet and (max-width: $desktop-width) {
   .contacts {
-    padding-top: 30px;
+    padding-top: 15px;
     width: 768px;
 
     &::after {
       display: block;
       top: 0;
-      right: 0;
+      right: 53px;
     }
   }
 
@@ -135,7 +149,11 @@
     margin: 0 auto;
     width: 668px;
     font-size: 17px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+  }
+
+  .contacts__table br {
+    display: none;
   }
 
   .contacts__group {
@@ -149,7 +167,7 @@
     margin: 0 auto;
     width: 768px;
     height: 457px;
-    margin-bottom: 55px;
+    margin-bottom: 33px;
   }
 
   .contacts__link {

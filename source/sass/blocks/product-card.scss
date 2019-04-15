@@ -6,15 +6,18 @@
 
 .product-card__title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 25px;
   line-height: 25px;
   color: black;
   font-weight: 700;
-  margin-bottom: -5px;
+  letter-spacing: 0.015em;
 }
 
 .product-card__tag {
+  display: block;
   margin: 0;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 17px;
   color: #63d1bb;
@@ -28,7 +31,8 @@
   line-height: 24px;
   color: #444444;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
 }
 
 .product-card__specifications {
@@ -39,7 +43,7 @@
 .product-card__value {
   text-align: left;
   padding-right: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
   border-bottom: 1px solid #e5e5e5;
   font-size: 15px;
@@ -49,24 +53,24 @@
 }
 
 .product-card__image {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .product-card__price {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   font-size: 17px;
   line-height: 24px;
   color: #444444;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 
-@media (min-width: $tablet-width) {
+@include tablet {
   .product-card {
     position: relative;
     width: 668px;
-    padding-top: 50px;
   }
 
   .product-card__title {
@@ -80,8 +84,14 @@
     position: absolute;
     width: 90px;
     text-align: center;
-    top: 58px;
-    right: 20px;
+    top: 10px;
+    right: 19px;
+  }
+
+  .product-card__property,
+  .product-card__value {
+    padding-top: 7px;
+    padding-bottom: 10px;
   }
 
   .product-card__description {
@@ -93,19 +103,22 @@
 
   .product-card__specifications {
     width: 290px;
-    margin-bottom: 40px;
+    margin-bottom: 53px;
   }
 
   .product-card__image {
     position: absolute;
     width: 334px;
     height: 404px;
-    top: 150px;
+    top: 105px;
     right: 0;
   }
 
   .product-card__price {
     width: 290px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
   }
 
   .product-card__link {
@@ -113,20 +126,22 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop {
   .product-card {
     width: 875px;
     padding-left: 175px;
+    padding-top: 50px;
   }
 
   .product-card__title {
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: 0.02em;
   }
 
   .product-card__tag {
-    top: 58px;
-    left: 43px;
+    top: 63px;
+    left: 36px;
   }
 
   .product-card__description {
@@ -134,7 +149,7 @@
   }
 
   .product-card__specifications {
-    margin-bottom: 95px;
+    margin-bottom: 103px;
   }
 
   .product-card__image {

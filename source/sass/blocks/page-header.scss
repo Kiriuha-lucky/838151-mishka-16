@@ -34,14 +34,57 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
-  background-image: url("../img/icon-menu-open.svg");
   background-position: center center;
   background-repeat: no-repeat;
+
+  &--open {
+    @include btn-reset;
+    right: 15px;
+    top: -55px;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &--close {
+    @include btn-reset;
+    right: 15px;
+    top: -55px;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-menu-close.svg");
+  }
 }
 
 .page-header__nav-list {
   @include list-reset;
   outline: 2px solid green;
+
+  &--open {
+    display: block;
+    width: 320px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+  }
+
+  &--close {
+    display: none;
+    width: 320px;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+  }
 }
 
 .page-header__add-nav-list {
@@ -50,16 +93,18 @@
 
 .page-header__nav-link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 29px;
+  padding-bottom: 27px;
   padding-left: 30px;
   padding-right: 30px;
+  vertical-align: top;
   border-top: 1px solid #ececec;
   font-size: 17px;
   line-height: 24px;
   color: black;
   font-weight: 700;
   cursor: pointer;
+  letter-spacing: 0.05em;
 
   &:hover,
   &:focus {
@@ -96,10 +141,10 @@
 }
 
 .page-header__nav-icon {
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@include tablet and (max-width: $desktop-width) {
   .page-header {
     width: 668px;
   }
@@ -119,6 +164,7 @@
   }
 
   .page-header__nav-list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -142,7 +188,7 @@
     }
 
     &:nth-child(3) {
-      margin-left: 338px;
+      margin-left: 325px;
     }
 
     &:nth-child(3) .page-header__nav-link {
@@ -196,7 +242,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop {
   .page-header {
     width: 1050px;
   }

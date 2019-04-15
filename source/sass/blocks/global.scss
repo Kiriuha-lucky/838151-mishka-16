@@ -4,7 +4,7 @@ a {
 
 body {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   font-family: "Opensasns", "Arial", sans-serif;
   font-size: 15px;
@@ -15,14 +15,23 @@ body {
   outline: 2px solid blue;
 }
 
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
+@media (min-width: $mobile-width-only) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: $desktop-width) {
-  body {
+@include tablet {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@include desktop {
+  .container {
     width: 1150px;
+    margin: 0 auto;
   }
 }

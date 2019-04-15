@@ -12,10 +12,11 @@
   display: inline-block;
 
   width: 140px;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-right: 150px;
   padding-bottom: 30px;
   padding-left: 30px;
+  letter-spacing: 0.09em;
 
   cursor: pointer;
 
@@ -24,7 +25,7 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 22px;
 
     width: 70px;
     height: 70px;
@@ -74,14 +75,14 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@include tablet {
   .category-list {
     display: flex;
     justify-content: center;
   }
 
   .category-list__link {
-    width: 144px;
+    width: 139px;
     padding-right: 165px;
     font-size: 20px;
     line-height: 30px;
@@ -93,7 +94,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop {
   .category-list__link {
     width: 145px;
     padding-right: 350px;

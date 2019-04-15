@@ -2,7 +2,11 @@
   width: 260px;
 }
 
-@media (min-width: $desktop-width) {
+.catalog__product-snippet {
+  margin-bottom: 30px;
+}
+
+@include tablet {
   .catalog {
     display: flex;
     justify-content: space-between;
@@ -10,8 +14,17 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@include tablet and (max-width: $desktop-width) {
   .catalog {
     width: 668px;
+    margin-bottom: 38px;
+  }
+
+  .catalog__product-snippet {
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

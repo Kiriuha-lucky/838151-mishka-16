@@ -1,6 +1,7 @@
 .production {
+  outline: 2px solid blue;
   width: 260px;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
@@ -57,7 +58,7 @@
 }
 
 .production__video {
-  margin-bottom: 30px;
+  margin-bottom: 19px;
 }
 
 .production__text {
@@ -67,8 +68,9 @@
   font-weight: 400;
   color: #444444;
   padding-left: 32px;
-  padding-right: 32px;
-  margin-bottom: 30px;
+  padding-right: 48px;
+  margin-bottom: 23px;
+  letter-spacing: 0.01em;
 }
 
 .production__link {
@@ -76,7 +78,7 @@
   width: 195px;
 }
 
-@media (min-width: $tablet-width) {
+@include tablet {
   .production {
     display: flex;
     flex-direction: column;
@@ -89,11 +91,11 @@
     order: -1;
     width: 668px;
     height: 455px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .production__title {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
 
@@ -109,17 +111,18 @@
   }
 
   .production__text {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .production__link {
     width: 588px;
+    margin-bottom: 13px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@include desktop {
   .production {
     position: relative;
     width: 235px;
