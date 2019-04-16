@@ -54,7 +54,7 @@
   margin-bottom: 30px;
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .reviews {
     position: relative;
     width: 668px;
@@ -88,7 +88,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .reviews {
     width: 775px;
     padding-left: 175px;

@@ -70,7 +70,7 @@
   cursor: pointer;
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .product-snippet {
     width: 265px;
     padding-left: 25px;
@@ -105,7 +105,7 @@
   }
 }
 
-@include tablet and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .product-snippet {
     position: relative;
     min-height: 284px;

@@ -6,7 +6,7 @@ body {
   position: relative;
   min-width: 320px;
   margin: 0 auto;
-  font-family: "Opensasns", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -15,21 +15,21 @@ body {
   outline: 2px solid blue;
 }
 
-@media (min-width: $mobile-width-only) {
+@media (max-width: 320px) {
   .container {
     width: 320px;
     margin: 0 auto;
   }
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .container {
     width: 768px;
     margin: 0 auto;
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .container {
     width: 1150px;
     margin: 0 auto;

@@ -72,7 +72,7 @@
   }
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .about-us {
     width: 668px;
   }
@@ -126,7 +126,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .about-us {
     width: 700px;
   }

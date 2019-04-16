@@ -4,6 +4,7 @@
   line-height: 18px;
   color: black;
   font-weight: 700;
+  background-color: red;
 }
 
 .form__group {
@@ -160,6 +161,7 @@
 .form__label--text {
   padding-left: 0;
   margin-bottom: 15px;
+  color: red;
 }
 
 .form__group-input {
@@ -167,8 +169,6 @@
   border: none;
   padding-bottom: 15px;
   margin-bottom: 23px;
-
-
   font-size: inherit;
   line-height: inherit;
   border-bottom: 2px solid black;
@@ -198,7 +198,7 @@
   margin-bottom: 50px;
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .form {
     width: 768px;
   }
@@ -243,7 +243,6 @@
 
   .form__group-input {
     background-color: transparent;
-    width: 500px;
   }
 
   .form__label--radio {
@@ -336,7 +335,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .form {
     width: 1050px;
   }

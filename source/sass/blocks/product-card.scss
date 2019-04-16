@@ -67,7 +67,7 @@
   letter-spacing: 0.02em;
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .product-card {
     position: relative;
     width: 668px;
@@ -126,7 +126,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .product-card {
     width: 875px;
     padding-left: 175px;

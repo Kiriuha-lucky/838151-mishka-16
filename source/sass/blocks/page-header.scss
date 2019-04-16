@@ -144,7 +144,7 @@
   margin-right: 20px;
 }
 
-@include tablet and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-header {
     width: 668px;
   }
@@ -242,7 +242,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .page-header {
     width: 1050px;
   }

@@ -78,7 +78,7 @@
   width: 195px;
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .production {
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .production {
     position: relative;
     width: 235px;

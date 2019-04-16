@@ -75,7 +75,7 @@
   }
 }
 
-@include tablet {
+@media (min-width: $tablet-width) {
   .category-list {
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@
   }
 }
 
-@include desktop {
+@media (min-width: $desktop-width) {
   .category-list__link {
     width: 145px;
     padding-right: 350px;
