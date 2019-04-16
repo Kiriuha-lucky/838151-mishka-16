@@ -68,7 +68,6 @@
 
 .page-header__nav-list {
   @include list-reset;
-  outline: 2px solid green;
 
   &--open {
     display: block;
