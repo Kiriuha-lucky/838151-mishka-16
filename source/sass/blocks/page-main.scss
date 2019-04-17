@@ -5,6 +5,14 @@
 .page-main__wrapper {
   margin: 0 auto;
   width: 260px;
+
+  @include min_tablet {
+    width: 668px;
+  }
+
+  @include min_desktop {
+    width: 1050px;
+  }
 }
 
 .page-main__title {
@@ -37,85 +45,8 @@
     background-color: #f1f1f1;
     background-image: none;
   }
-}
 
-.page-main__catalog,
-.page-main__form,
-.page-main__contacts {
-  margin: 0 auto;
-}
-
-.page-main__reviews {
-  margin-bottom: 81px;
-
-  // &::after {
-  //   display: block;
-  //
-  //   width: 320px;
-  //   height: 5px;
-  //   margin-left: -28px;
-  //   margin-top: 35px;
-  //
-  //   content: "";
-  //
-  //   background-image: url("../img/bg-zigzag-line.svg");
-  //   background-repeat: repeat-x;
-  //   background-position: 0 0;
-  //   background-size: contain;
-  // }
-}
-
-.page-main__text {
-  margin-right: 30px;
-  margin-left: 30px;
-  font-size: 13px;
-  line-height: 24px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.page-main__production {
-  margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 50px;
-}
-
-.page-main__section-nav {
-  margin: 0 auto;
-  margin-bottom: 48px;
-}
-
-.page-main__product-card {
-  margin-bottom: 72px;
-
-  // &::after {
-  //   display: block;
-  //
-  //   width: 100%;
-  //   height: 7px;
-  //
-  //   margin-top: 35px;
-  //
-  //   content: "";
-  //
-  //   background-image: url("../img/bg-zigzag-line.svg");
-  //   background-repeat: repeat-x;
-  //   background-position: 0 0;
-  //   background-size: contain;
-  // }
-}
-
-.page-main__about-us {
-  margin: 0 auto;
-  margin-bottom: 55px;
-}
-
-.page-main__category-list {
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .page-main__title {
+  @include min_tablet {
     width: 498px;
     min-height: 472px;
     padding-top: 155px;
@@ -143,43 +74,7 @@
     }
   }
 
-  .page-main__wrapper {
-    width: 668px;
-  }
-
-  .page-main__reviews {
-    margin-left: -50px;
-    margin-bottom: 132px;
-  }
-
-  .page-main__category-list {
-    margin-bottom: 35px;
-  }
-
-  .page-main__product-card {
-    margin: 0 auto;
-    margin-bottom: 117px;
-  }
-
-  .page-main__text {
-    font-size: 17px;
-    line-height: 30px;
-    margin: 15px auto;
-    margin-bottom: 50px;
-    width: 87%;
-  }
-
-  .page-main__production {
-    margin-bottom: 66px;
-  }
-
-  .page-main__about-us {
-    margin-bottom: 84px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-main__title {
+  @include min_desktop {
     width: 630px;
     padding-left: 260px;
     padding-right: 260px;
@@ -196,36 +91,140 @@
       margin-bottom: 111px;
     }
   }
+}
 
-  .page-main__product-card {
-    margin-bottom: 155px;
+.page-main__form,
+.page-main__contacts {
+  margin: 0 auto;
+}
+
+.page-main__reviews {
+  margin-bottom: 81px;
+
+  @include min_tablet {
+    margin-left: -50px;
+    margin-bottom: 132px;
   }
 
-  .page-main__about-us {
-    margin-bottom: 91px;
-  }
-
-  .page-main__wrapper {
-    width: 1050px;
-  }
-
-  .page-main__category-list {
-    margin-bottom: 79px;
-  }
-
-  .page-main__reviews {
+  @include min_desktop {
     margin-left: 0;
     margin-bottom: 170px;
   }
 
-  .page-main__text {
+  // &::after {
+  //   display: block;
+  //
+  //   width: 320px;
+  //   height: 5px;
+  //   margin-left: -28px;
+  //   margin-top: 35px;
+  //
+  //   content: "";
+  //
+  //   background-image: url("../img/bg-zigzag-line.svg");
+  //   background-repeat: repeat-x;
+  //   background-position: 0 0;
+  //   background-size: contain;
+  // }
+}
+
+.page-main__text {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 13px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  @include min_tablet {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 15px auto;
+    margin-bottom: 50px;
+    width: 87%;
+  }
+
+  @include min_desktop {
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 65px;
     width: 60%;
   }
+}
 
-  .page-main__catalog {
+.page-main__production {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  @include min_tablet {
+    margin-bottom: 66px;
+  }
+}
+
+.page-main__section-nav {
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+
+.page-main__product-card {
+  margin-bottom: 72px;
+
+  @include min_tablet {
+    margin: 0 auto;
+    margin-bottom: 117px;
+  }
+
+  @include min_desktop {
+    margin-bottom: 155px;
+  }
+
+  // &::after {
+  //   display: block;
+  //
+  //   width: 100%;
+  //   height: 7px;
+  //
+  //   margin-top: 35px;
+  //
+  //   content: "";
+  //
+  //   background-image: url("../img/bg-zigzag-line.svg");
+  //   background-repeat: repeat-x;
+  //   background-position: 0 0;
+  //   background-size: contain;
+  // }
+}
+
+.page-main__about-us {
+  margin: 0 auto;
+  margin-bottom: 55px;
+
+  @include min_tablet {
+    margin-bottom: 84px;
+  }
+
+  @include min_desktop {
+    margin-bottom: 91px;
+  }
+}
+
+.page-main__category-list {
+  margin: 0 auto;
+
+  @include min_tablet {
+    margin-bottom: 35px;
+  }
+
+  @include min_desktop {
+    margin-bottom: 79px;
+  }
+}
+
+.page-main__catalog {
+  margin: 0 auto;
+
+  @include min_desktop {
     margin-bottom: 30px;
   }
 }

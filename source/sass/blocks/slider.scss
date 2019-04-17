@@ -20,25 +20,22 @@
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
-}
 
-
-@media (min-width: $tablet-width) {
-  .slider__btn-group {
-    position: absolute;
-    right: 50px;
-    bottom: 11px;
-  }
-
-  .slider__btn {
+  @include min_tablet {
     margin: 0;
     width: 83.5px;
     border: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .slider__btn-group {
+.slider__btn-group {
+  @include min_tablet {
+    position: absolute;
+    right: 50px;
+    bottom: 11px;
+  }
+
+  @include min_desktop {
     right: 0;
     bottom: 50px;
   }

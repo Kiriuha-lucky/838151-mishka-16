@@ -4,11 +4,32 @@
   padding-top: 30px;
   min-width: 320px;
   background-color: #f1f1f1;
+
+  @include min_tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 145px;
+    padding-top: 0;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 56px;
+  }
+
+  @include min_desktop {
+    margin-top: 104px;
+    width: 1050px;
+  }
 }
 
 .page-footer__social-list {
   margin: 0 auto;
   margin-bottom: 17px;
+
+  @include min_tablet {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__copyright {
@@ -27,6 +48,17 @@
   line-height: 18px;
   font-weight: 700;
   color: black;
+
+  @include min_tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    border: none;
+  }
+
+  @include min_desktop {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright-icon {
@@ -43,65 +75,29 @@
 
 .page-footer__logo-link {
   display: none;
-}
 
-@media (min-width: $tablet-width) {
-  .page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 145px;
-    padding-top: 0;
-    width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 56px;
-  }
-
-  .page-footer__logo-link {
+  @include min_tablet {
     margin: 0 auto;
     width: 260px;
     display: block;
     cursor: pointer;
   }
 
-  .page-footer__copyright {
-    padding-top: 0;
-    padding-bottom: 0;
-    justify-content: flex-end;
-    border: none;
-  }
-
-  .page-footer__logo-icon:hover,
-  .page-footer__logo-icon:focus {
-    path {
-      fill: #46c1ae;
-    }
-  }
-
-  .page-footer__logo-icon:active {
-    path {
-      fill: #46c1ae;
-      opacity: 0.3;
-    }
-  }
-
-  .page-footer__social-list {
-    margin-bottom: 0;
+  @include min_desktop {
+    margin: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-footer {
-    margin-top: 104px;
-    width: 1050px;
+.page-footer__logo-icon:hover,
+.page-footer__logo-icon:focus {
+  path {
+    fill: #46c1ae;
   }
+}
 
-  .page-footer__logo-link {
-    margin: 0;
-  }
-
-  .page-footer__copyright {
-    margin: 0;
+.page-footer__logo-icon:active {
+  path {
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 }

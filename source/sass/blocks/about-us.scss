@@ -1,7 +1,14 @@
 .about-us {
   width: 260px;
-  outline: 2px solid blue;
   color: black;
+
+  @include min_tablet {
+    width: 668px;
+  }
+
+  @include min_desktop {
+    width: 700px;
+  }
 }
 
 .about-us__title {
@@ -10,10 +17,27 @@
   line-height: 25px;
   font-weight: 600;
   margin-bottom: 28px;
+
+  @include min_tablet {
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    margin-bottom: 43px;
+  }
+
+  @include min_desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   @include list-reset;
+
+  @include min_tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-us__item {
@@ -70,26 +94,8 @@
   &--present::before {
     background-image: url("../img/icon-feature-gift.svg");
   }
-}
 
-@media (min-width: $tablet-width) {
-  .about-us {
-    width: 668px;
-  }
-
-  .about-us__title {
-    font-size: 43px;
-    line-height: 50px;
-    letter-spacing: 0.02em;
-    margin-bottom: 43px;
-  }
-
-  .about-us__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .about-us__item {
+  @include min_tablet {
     width: 334px;
     padding-bottom: 0;
     font-size: 20px;
@@ -124,19 +130,8 @@
       order: 6;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .about-us {
-    width: 700px;
-  }
-
-  .about-us__title {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .about-us__item {
+  @include min_desktop {
     width: 300px;
   }
 }

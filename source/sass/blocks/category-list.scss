@@ -4,6 +4,11 @@
   font-size: 19px;
   line-height: 24px;
   color: white;
+
+  @include min_tablet {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .category-list__link {
@@ -73,15 +78,8 @@
     background-color: #46c1ae;
     color: rgba(255, 255, 255, 0.3);
   }
-}
 
-@media (min-width: $tablet-width) {
-  .category-list {
-    display: flex;
-    justify-content: center;
-  }
-
-  .category-list__link {
+  @include min_tablet {
     width: 139px;
     padding-right: 165px;
     font-size: 20px;
@@ -92,10 +90,8 @@
     background-repeat: repeat-x;
     background-position: 100% 120%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .category-list__link {
+  @include min_desktop {
     width: 145px;
     padding-right: 350px;
   }

@@ -15,22 +15,19 @@ body {
   outline: 2px solid blue;
 }
 
-@media (max-width: 320px) {
-  .container {
+
+.container {
+  @media (max-width: 320px) {
     width: 320px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .container {
+  @include min_tablet {
     width: 768px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .container {
+  @include min_desktop {
     width: 1150px;
     margin: 0 auto;
   }
