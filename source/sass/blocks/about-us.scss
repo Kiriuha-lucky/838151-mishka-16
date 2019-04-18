@@ -33,11 +33,6 @@
 
 .about-us__list {
   @include list-reset;
-
-  // @include min_tablet {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
 }
 
 .about-us__wrapper {
@@ -56,10 +51,6 @@
   line-height: 20px;
   font-weight: 600;
   letter-spacing: 0.05em;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &::before {
     position: absolute;

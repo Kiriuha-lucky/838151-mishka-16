@@ -93,46 +93,89 @@
   }
 }
 
-.page-main__form,
-.page-main__contacts {
+.page-main__form {
   margin: 0 auto;
 }
 
+.page-main__contacts {
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  @include min_tablet {
+    margin-bottom: 56px;
+  }
+
+  @include min_desktop {
+    margin-bottom: 105px;
+  }
+}
+
 .page-main__reviews {
-  margin-bottom: 81px;
+  margin-bottom: 37px;
+  position: relative;
+  padding-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 7px;
+    bottom: 0;
+    left: -30px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: cover;
+  }
 
   @include min_tablet {
     margin-left: -50px;
-    margin-bottom: 132px;
+    margin-bottom: 45px;
+    padding-bottom: 85px;
+
+    &::after {
+      width: 768px;
+      height: 16px;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   @include min_desktop {
     margin-left: 0;
-    margin-bottom: 170px;
+    margin-bottom: 70px;
+    padding-bottom: 100px;
+
+    &::after {
+      width: 1050px;
+      height: 24px;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 
 .page-main__text {
-  margin-right: 30px;
-  margin-left: 30px;
+  width: 260px;
   font-size: 13px;
   line-height: 24px;
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0 auto;
+  margin-top: -7px;
+  margin-bottom: 23px;
 
   @include min_tablet {
+    width: 668px;
     font-size: 17px;
     line-height: 30px;
-    margin: 15px auto;
-    margin-bottom: 50px;
-    width: 87%;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 55px;
   }
 
   @include min_desktop {
+    width: 700px;
     margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 65px;
-    width: 60%;
+    margin-top: -5px;
+    margin-bottom: 56px;
   }
 }
 
@@ -144,23 +187,61 @@
   @include min_tablet {
     margin-bottom: 66px;
   }
+
+  @include min_desktop {
+    margin-bottom: 104px;
+  }
 }
 
 .page-main__section-nav {
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 28px;
+
+  @include min_tablet {
+    margin-bottom: 48px;
+  }
 }
 
 .page-main__product-card {
-  margin-bottom: 72px;
+  margin-bottom: 32px;
+  position: relative;
+  padding-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 7px;
+    bottom: 0;
+    left: -30px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: cover;
+  }
 
   @include min_tablet {
     margin: 0 auto;
-    margin-bottom: 117px;
+    margin-bottom: 50px;
+    padding-bottom: 67px;
+
+    &::after {
+      width: 768px;
+      height: 16px;
+      bottom: 0;
+      left: -50px;
+    }
   }
 
   @include min_desktop {
-    margin-bottom: 155px;
+    margin-bottom: 60px;
+    padding-bottom: 95px;
+
+    &::after {
+      width: 1050px;
+      height: 24px;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
 
@@ -169,11 +250,11 @@
   margin-bottom: 55px;
 
   @include min_tablet {
-    margin-bottom: 84px;
+    margin-bottom: 34px;
   }
 
   @include min_desktop {
-    margin-bottom: 91px;
+    margin-bottom: 40px;
   }
 }
 

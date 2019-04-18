@@ -28,7 +28,7 @@
     opacity: 0.3;
   }
 
-  @include min_tablet_max_desktop {
+  @include min_tablet {
     width: 86px;
     padding: 0;
     position: absolute;
@@ -39,14 +39,9 @@
   }
 
   @include min_desktop {
-    width: 86px;
-    padding: 0;
-    position: absolute;
     top: 15px;
     left: 50%;
     transform: translateX(-48px);
-    display: block;
-    z-index: 2;
   }
 }
 
@@ -63,42 +58,15 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  background-image: url("../img/icon-menu-open.svg");
   background-position: center center;
   background-repeat: no-repeat;
 
-  &--open {
-    @include btn-reset;
-    right: 15px;
-    top: -55px;
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-menu-open.svg");
-  }
-
   &--close {
-    @include btn-reset;
-    right: 15px;
-    top: -55px;
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background-position: center center;
-    background-repeat: no-repeat;
     background-image: url("../img/icon-menu-close.svg");
   }
 
-  @include min_tablet_max_desktop {
-    display: none;
-  }
-
-  @include min_desktop {
+  @include min_tablet {
     display: none;
   }
 }
@@ -138,7 +106,7 @@
 .page-header__add-nav-list {
   display: none;
 
-  @include min_tablet_max_desktop {
+  @include min_tablet {
     @include list-reset;
     width: 668px;
     margin-top: -67px;
@@ -149,12 +117,8 @@
   }
 
   @include min_desktop {
-    @include list-reset;
     width: 1050px;
-    display: flex;
-    font-size: 15px;
-    line-height: 24px;
-    font-weight: 700;
+    margin-top: 0;
   }
 }
 
@@ -202,10 +166,7 @@
 }
 
 .page-header__nav-item {
-  &:nth-child(1) .page-header__nav-link {
-    padding-left: 75px;
-  }
-
+  &:nth-child(1) .page-header__nav-link,
   &:nth-child(2) .page-header__nav-link {
     padding-left: 75px;
   }
@@ -279,22 +240,13 @@
 }
 
 .page-header__nav-icon--search {
-  @include min_tablet_max_desktop {
-    margin-right: 0;
-  }
-
-  @include min_desktop {
+  @include min_tablet {
     margin-right: 0;
   }
 }
 
 .page-header__add-nav-link {
-  @include min_tablet_max_desktop {
-    color: black;
-    cursor: pointer;
-  }
-
-  @include min_desktop {
+  @include min_tablet {
     color: black;
     cursor: pointer;
   }

@@ -29,14 +29,20 @@
 }
 
 .slider__btn-group {
+  margin-bottom: 30px;
+
   @include min_tablet {
     position: absolute;
     right: 50px;
-    bottom: 11px;
+    top: 357px;
   }
 
   @include min_desktop {
     right: 0;
-    bottom: 50px;
+    top: 308px;
   }
+}
+
+.slider-btn {
+  cursor: pointer;
 }

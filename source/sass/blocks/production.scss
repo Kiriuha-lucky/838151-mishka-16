@@ -103,20 +103,32 @@
     }
 
     &::after {
-      top: 170px;
-      left: -400px;
+      top: 135px;
+      left: -479px;
     }
   }
 }
 
 .production__video {
+  display: block;
+  position: relative;
   margin-bottom: 19px;
+
+  &::after {
+    display: inline;
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 5;
+  }
 
   @include min_tablet {
     order: -1;
     width: 668px;
     height: 455px;
-    margin-bottom: 37px;
+    margin-bottom: 53px;
   }
 
   @include min_desktop {

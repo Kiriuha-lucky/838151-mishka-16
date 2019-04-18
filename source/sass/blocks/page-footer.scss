@@ -1,7 +1,6 @@
 .page-footer {
   margin: 0 auto;
-  margin-top: 33px;
-  padding-top: 30px;
+  padding-top: 26px;
   min-width: 320px;
   background-color: #f1f1f1;
 
@@ -14,11 +13,9 @@
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 56px;
   }
 
   @include min_desktop {
-    margin-top: 104px;
     width: 1050px;
   }
 }
