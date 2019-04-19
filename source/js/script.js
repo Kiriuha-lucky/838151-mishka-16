@@ -65,6 +65,9 @@
 // });
 var toggle = document.querySelector(".page-header__nav-toggle");
 var menu = document.querySelector(".page-header__nav-list");
+var popup = document.querySelector(".add-to-cart-form");
+var button1 = document.querySelector(".product-card__link");
+var overlay = document.querySelector(".overlay");
 
 menu.classList.add("page-header__nav-list--close");
 toggle.classList.add("page-header__nav-toggle--open");
@@ -84,4 +87,24 @@ toggle.addEventListener("click", function(evt) {
 }
 });
 
-console.log("Всем првиет");
+button1.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popup.classList.add("add-to-cart-form--open");
+  overlay.classList.add("overlay--open");
+});
+
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("add-to-cart-form--open")) {
+      popup.classList.remove("add-to-cart-form--open");
+      overlay.classList.remove("overlay--open");
+    }
+  }
+});
+
+popup.addEventListener("submit", function(evt) {
+    evt.preventDefault();
+    popup.offsetWidth = popup.offsetWidth;
+});
