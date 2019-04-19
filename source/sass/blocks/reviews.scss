@@ -1,7 +1,7 @@
 .reviews {
   width: 260px;
 
-  @include min_tablet {
+  @include min($tablet) {
     position: relative;
     width: 668px;
     min-height: 377px;
@@ -13,7 +13,7 @@
     background-position: 0 0;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 775px;
     padding-left: 175px;
     padding-top: 70px;
@@ -34,14 +34,14 @@
   margin-bottom: 24px;
   letter-spacing: 0.02em;
 
-  @include min_tablet {
+  @include min($tablet) {
     font-size: 43px;
     line-height: 50px;
     padding-right: 200px;
     margin-bottom: 47px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 48px;
@@ -57,13 +57,13 @@
   margin-bottom: 24px;
   letter-spacing: 0.025em;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 668px;
     font-size: 17px;
     margin-bottom: 54px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 775px;
     margin-bottom: 37px;
   }
@@ -89,14 +89,14 @@
 }
 
 .reviews__write-link {
-  @include min_tablet {
+  @include min($tablet) {
     width: 175px;
     position: absolute;
     top: 80px;
     right: 50px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     right: 0;
   }
 }

@@ -5,11 +5,11 @@
   color: black;
   font-weight: 700;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 768px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 1150px;
   }
 }
@@ -25,7 +25,7 @@
     margin-bottom: 25px;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 718px;
     padding-top: 14px;
     padding-bottom: 2px;
@@ -62,7 +62,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 1100px;
   }
 
@@ -74,7 +74,7 @@
 .form__group span {
   display: none;
 
-  @include min_tablet {
+  @include min($tablet) {
     display: block;
   }
 }
@@ -91,12 +91,12 @@
   color: #63d1bb;
   text-transform: uppercase;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 167px;
     padding-right: 0;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 175px;
     text-align: center;
   }
@@ -106,13 +106,13 @@
   @include list-reset;
   list-style: none;
 
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
     flex-wrap: wrap;
     width: 501px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 875px;
   }
 }
@@ -125,7 +125,7 @@
   padding-top: 10px;
   cursor: pointer;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 43px;
     padding-top: 0;
     min-height: 0;
@@ -175,7 +175,7 @@
     border: 2px solid #cecece;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     font-size: 19px;
     line-height: 18px;
     padding-left: 80px;
@@ -197,7 +197,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 400px;
   }
 }
@@ -243,7 +243,7 @@
     border: 2px solid #cecece;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
     flex-wrap: wrap;
     width: 168px;
@@ -265,7 +265,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 181px;
   }
 }
@@ -281,7 +281,7 @@
   min-height: 0;
   margin-bottom: 15px;
 
-  @include min_tablet {
+  @include min($tablet) {
     display: inline;
     font-size: 19px;
     line-height: 18px;
@@ -301,7 +301,7 @@
   line-height: 19px;
   border-bottom: 2px solid black;
 
-  @include min_tablet {
+  @include min($tablet) {
     flex-grow: 1;
     margin-left: 23px;
     letter-spacing: 0.02em;
@@ -343,15 +343,11 @@
 
     &:hover + .form__group-icon,
     &:focus + .form__group-icon {
-      path {
-        fill: #62d1ba;
-      }
+      fill: #62d1ba;
     }
 
     &:active + .form__group-icon {
-      path {
-        fill: #62d1ba;
-      }
+      fill: #62d1ba;
     }
 
     &:active {
@@ -359,7 +355,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     &--tel {
       width: 614px;
     }
@@ -381,7 +377,7 @@
   font-weight: 400;
   border: 2px solid black;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 467px;
     font-size: 19px;
     line-height: 19px;
@@ -398,7 +394,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 666px;
   }
 }
@@ -411,7 +407,7 @@
   font-weight: 400;
   margin-bottom: 30px;
 
-  @include min_tablet {
+  @include min($tablet) {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 0;
@@ -422,7 +418,7 @@
 .form__button {
   margin-bottom: 50px;
 
-  @include min_tablet {
+  @include min($tablet) {
     order: -1;
     width: 230px;
     margin-bottom: 0;
@@ -432,18 +428,18 @@
 .form__group-icon {
   display: none;
 
-  @include min_tablet {
+  @include min($tablet) {
     display: block;
     margin-left: -50px;
   }
 }
 
 .form__group legend {
-  @include min_tablet {
+  @include min($tablet) {
     display: none;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     padding: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -451,14 +447,14 @@
 }
 
 .form__subgroup {
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
     align-items: baseline;
   }
 }
 
 .form__wrapper {
-  @include min_tablet {
+  @include min($tablet) {
     margin: 0 auto;
     width: 668px;
     display: flex;
@@ -468,20 +464,20 @@
     margin-bottom: 50px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 700px;
   }
 }
 
 .form__item-wrapper {
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
     width: 500px;
     align-items: baseline;
     margin-bottom: 39px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 700px;
   }
 }

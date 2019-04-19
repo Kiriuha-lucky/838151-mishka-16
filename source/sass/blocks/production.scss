@@ -5,7 +5,7 @@
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
 
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
     flex-direction: column;
     width: 668px;
@@ -13,7 +13,7 @@
     padding-top: 0;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     position: relative;
     width: 235px;
     min-height: 410px;
@@ -73,7 +73,7 @@
     opacity: 0.3;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
@@ -89,7 +89,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     padding-left: 0;
     padding-top: 50px;
     margin-bottom: 35px;
@@ -124,14 +124,14 @@
     z-index: 5;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     order: -1;
     width: 668px;
     height: 455px;
     margin-bottom: 53px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     position: absolute;
     width: 682px;
     height: 455px;
@@ -151,13 +151,13 @@
   margin-bottom: 23px;
   letter-spacing: 0.01em;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 33px;
     font-size: 15px;
     line-height: 30px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     padding: 0;
     margin-bottom: 50px;
   }
@@ -167,12 +167,12 @@
   margin: 0 auto;
   width: 195px;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 588px;
     margin-bottom: 13px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 230px;
   }
 }

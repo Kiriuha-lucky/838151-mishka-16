@@ -5,7 +5,7 @@
   line-height: 24px;
   color: white;
 
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
     justify-content: center;
   }
@@ -79,7 +79,7 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 139px;
     padding-right: 165px;
     font-size: 20px;
@@ -91,7 +91,7 @@
     background-position: 100% 120%;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 145px;
     padding-right: 350px;
   }

@@ -24,12 +24,12 @@ body {
     margin: 0 auto;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 768px;
     margin: 0 auto;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 1150px;
     margin: 0 auto;
   }

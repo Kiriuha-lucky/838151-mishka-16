@@ -10,34 +10,14 @@
   background-color: transparent;
 }
 
-@mixin tablet {
-  min-width: $tablet-width;
-}
-
-@mixin desktop {
-  min-width: $desktop-width;
-}
-
-@mixin min_tablet {
-  @media (min-width: $tablet-width) {
-    @content;
-  }
-}
-
-@mixin min_desktop {
-  @media (min-width: $desktop-width) {
-    @content;
-  }
-}
-
-@mixin max_desktop {
-  @media (max-width: $desktop-width) {
-    @content;
-  }
-}
-
 @mixin min_tablet_max_desktop {
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin min($media) {
+  @media (min-width: $media) {
     @content;
   }
 }

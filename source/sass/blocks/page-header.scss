@@ -7,7 +7,7 @@
     width: 668px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 1050px;
   }
 }
@@ -28,7 +28,7 @@
     opacity: 0.3;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 86px;
     padding: 0;
     position: absolute;
@@ -38,7 +38,7 @@
     z-index: 2;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     top: 15px;
     left: 50%;
     transform: translateX(-48px);
@@ -66,7 +66,7 @@
     background-image: url("../img/icon-menu-close.svg");
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     display: none;
   }
 }
@@ -97,7 +97,7 @@
     margin-bottom: 20px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     display: flex;
     margin-bottom: 20px;
   }
@@ -106,7 +106,7 @@
 .page-header__add-nav-list {
   display: none;
 
-  @include min_tablet {
+  @include min($tablet) {
     @include list-reset;
     width: 668px;
     margin-top: -67px;
@@ -116,7 +116,7 @@
     font-weight: 700;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 1050px;
     margin-top: 0;
   }
@@ -144,16 +144,12 @@
 
   &:hover .page-header__nav-icon,
   &:focus .page-header__nav-icon {
-    path {
-      fill: #46c1ae;
-    }
+    fill: #46c1ae;
   }
 
   &:active .page-header__nav-icon {
-    path {
-      fill: #46c1ae;
-      opacity: 0.3;
-    }
+    fill: #46c1ae;
+    opacity: 0.3;
   }
 
   &:active {
@@ -203,7 +199,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     &:nth-child(1) {
       border-right: 1px solid #dfdfdf;
     }
@@ -240,13 +236,13 @@
 }
 
 .page-header__nav-icon--search {
-  @include min_tablet {
+  @include min($tablet) {
     margin-right: 0;
   }
 }
 
 .page-header__add-nav-link {
-  @include min_tablet {
+  @include min($tablet) {
     color: black;
     cursor: pointer;
   }
@@ -269,7 +265,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     &:nth-child(2) {
       margin-left: 45px;
     }

@@ -2,12 +2,12 @@
   width: 260px;
   color: #444444;
 
-  @include min_tablet {
+  @include min($tablet) {
     position: relative;
     width: 668px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 875px;
     padding-left: 175px;
     padding-top: 50px;
@@ -23,13 +23,13 @@
   font-weight: 700;
   letter-spacing: 0.015em;
 
-  @include min_tablet {
+  @include min($tablet) {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 50px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     font-size: 53px;
     line-height: 57px;
     letter-spacing: 0.02em;
@@ -46,7 +46,7 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin: 0;
     position: absolute;
     width: 90px;
@@ -55,7 +55,7 @@
     right: 19px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     top: 63px;
     left: 36px;
   }
@@ -70,14 +70,14 @@
   margin-bottom: 20px;
   letter-spacing: 0.03em;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 290px;
     margin-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 50px;
   }
 }
@@ -85,12 +85,12 @@
 .product-card__specifications {
   margin-bottom: 30px;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 290px;
     margin-bottom: 53px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 103px;
   }
 }
@@ -107,7 +107,7 @@
   color: #444444;
   font-weight: 400;
 
-  @include min_tablet {
+  @include min($tablet) {
     padding-top: 7px;
     padding-bottom: 10px;
   }
@@ -116,7 +116,7 @@
 .product-card__image {
   margin-bottom: 15px;
 
-  @include min_tablet {
+  @include min($tablet) {
     position: absolute;
     width: 334px;
     height: 404px;
@@ -124,7 +124,7 @@
     right: 0;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 525px;
     height: 636px;
     top: 0;
@@ -142,7 +142,7 @@
   text-align: center;
   letter-spacing: 0.02em;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 290px;
     font-size: 20px;
     line-height: 24px;
@@ -151,7 +151,7 @@
 }
 
 .product-card__link {
-  @include min_tablet {
+  @include min($tablet) {
     width: 290px;
   }
 }

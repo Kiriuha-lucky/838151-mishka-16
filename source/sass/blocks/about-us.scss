@@ -2,11 +2,11 @@
   width: 260px;
   color: black;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 668px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 700px;
   }
 }
@@ -18,14 +18,14 @@
   font-weight: 600;
   margin-bottom: 28px;
 
-  @include min_tablet {
+  @include min($tablet) {
     font-size: 43px;
     line-height: 50px;
     letter-spacing: 0.02em;
     margin-bottom: 43px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -36,7 +36,7 @@
 }
 
 .about-us__wrapper {
-  @include min_tablet {
+  @include min($tablet) {
     display: flex;
   }
 }
@@ -92,7 +92,7 @@
     background-image: url("../img/icon-feature-gift.svg");
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 334px;
     padding-bottom: 0;
     font-size: 20px;
@@ -100,7 +100,7 @@
     margin-bottom: 50px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 300px;
   }
 }

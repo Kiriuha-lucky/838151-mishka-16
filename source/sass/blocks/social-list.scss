@@ -26,14 +26,10 @@
 
 .social-list__icon:hover,
 .social-list__icon:focus {
-  path {
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
 }
 
 .social-list__icon:active {
-  path {
-    fill: #46c1ae;
-    opacity: 0.3;
-  }
+  fill: #46c1ae;
+  opacity: 0.3;
 }

@@ -22,7 +22,7 @@
     padding-bottom: 25px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     padding-bottom: 25px;
     width: 265px;
     padding-left: 25px;
@@ -48,7 +48,7 @@
     line-height: 24px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     padding: 0;
     font-size: 20px;
     line-height: 24px;
@@ -66,12 +66,12 @@
   font-weight: 400;
   color: rgb(68, 68, 68);
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 270px;
     margin: 0;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin: 0;
     padding: 0;
   }
@@ -95,7 +95,7 @@
     padding: 0;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 270px;
     margin: 0;
     margin-top: auto;
@@ -118,7 +118,7 @@
     height: 334px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-left: -25px;
     width: 315px;
     height: 462px;

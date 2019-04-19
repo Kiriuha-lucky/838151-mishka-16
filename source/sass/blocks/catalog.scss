@@ -6,7 +6,7 @@
     margin-bottom: 38px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     display: flex;
     justify-content: space-between;
     width: 1050px;

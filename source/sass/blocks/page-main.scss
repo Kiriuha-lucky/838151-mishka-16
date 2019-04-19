@@ -6,11 +6,11 @@
   margin: 0 auto;
   width: 260px;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 668px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 1050px;
   }
 }
@@ -46,7 +46,7 @@
     background-image: none;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 498px;
     min-height: 472px;
     padding-top: 155px;
@@ -74,7 +74,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 630px;
     padding-left: 260px;
     padding-right: 260px;
@@ -101,11 +101,11 @@
   margin: 0 auto;
   margin-bottom: 35px;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 56px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 105px;
   }
 }
@@ -127,7 +127,7 @@
     background-size: cover;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-left: -50px;
     margin-bottom: 45px;
     padding-bottom: 85px;
@@ -140,7 +140,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-left: 0;
     margin-bottom: 70px;
     padding-bottom: 100px;
@@ -162,7 +162,7 @@
   margin-top: -7px;
   margin-bottom: 23px;
 
-  @include min_tablet {
+  @include min($tablet) {
     width: 668px;
     font-size: 17px;
     line-height: 30px;
@@ -171,7 +171,7 @@
     margin-bottom: 55px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     width: 700px;
     margin: 0 auto;
     margin-top: -5px;
@@ -184,11 +184,11 @@
   margin-top: 25px;
   margin-bottom: 50px;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 66px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 104px;
   }
 }
@@ -197,7 +197,7 @@
   margin: 0 auto;
   margin-bottom: 28px;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 48px;
   }
 }
@@ -219,7 +219,7 @@
     background-size: cover;
   }
 
-  @include min_tablet {
+  @include min($tablet) {
     margin: 0 auto;
     margin-bottom: 50px;
     padding-bottom: 67px;
@@ -232,7 +232,7 @@
     }
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 60px;
     padding-bottom: 95px;
 
@@ -249,11 +249,11 @@
   margin: 0 auto;
   margin-bottom: 55px;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 34px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 40px;
   }
 }
@@ -261,11 +261,11 @@
 .page-main__category-list {
   margin: 0 auto;
 
-  @include min_tablet {
+  @include min($tablet) {
     margin-bottom: 35px;
   }
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 79px;
   }
 }
@@ -273,7 +273,7 @@
 .page-main__catalog {
   margin: 0 auto;
 
-  @include min_desktop {
+  @include min($desktop) {
     margin-bottom: 30px;
   }
 }
