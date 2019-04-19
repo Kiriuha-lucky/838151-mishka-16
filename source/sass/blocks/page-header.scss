@@ -84,13 +84,10 @@
 
   &--close {
     display: none;
-    width: 320px;
-    position: absolute;
-    background-color: white;
-    z-index: 2;
   }
 
   @include min_tablet_max_desktop {
+    width: 668px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -157,6 +154,7 @@
   }
 
   @include min_tablet_max_desktop {
+    padding-left: 25px;
     border: none;
   }
 }

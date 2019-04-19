@@ -67,7 +67,6 @@ var toggle = document.querySelector(".page-header__nav-toggle");
 var menu = document.querySelector(".page-header__nav-list");
 
 menu.classList.add("page-header__nav-list--close");
-toggle.classList.remove("page-header__nav-toggle--close");
 toggle.classList.add("page-header__nav-toggle--open");
 
 toggle.addEventListener("click", function(evt) {
