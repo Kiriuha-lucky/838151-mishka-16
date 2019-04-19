@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 260px;
+  min-height: 372px;
   border-bottom: 1px solid #ececec;
 
   &:hover {
@@ -12,7 +13,7 @@
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.61);
   }
 
-  @include min_tablet_max_desktop {
+  @include min($tablet) {
     position: relative;
     min-height: 284px;
     width: 284px;
@@ -23,10 +24,11 @@
   }
 
   @include min($desktop) {
+    min-height: 632px;
+    padding-top: 0;
     padding-bottom: 25px;
     width: 265px;
     padding-left: 25px;
-    padding-right: 25px;
     outline: 1px solid #dfdfdf;
   }
 }
@@ -78,10 +80,14 @@
 }
 
 .product-snippet__price {
-  position: relative;
   margin: 0 auto;
+  margin-top: 18px;
   width: 204px;
   padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 15px;
 
   font-size: 15px;
   line-height: 24px;
@@ -90,20 +96,19 @@
   border-top: 1px solid #ededed;
 
   @include min_tablet_max_desktop {
-    width: 270px;
     margin: 0;
+    margin-top: auto;
+    width: 280px;
     padding: 0;
+    padding-top: 19px;
   }
 
   @include min($desktop) {
     width: 270px;
     margin: 0;
     margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 16px;
   }
 }
 

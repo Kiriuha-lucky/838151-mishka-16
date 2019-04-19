@@ -48,10 +48,54 @@
     background-position: 50% 50%;
   }
 
+  @include min($tablet) {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: -10px;
+      left: 0;
+    }
+  }
+
+  @include min($desktop) {
+    padding-left: 0;
+    padding-top: 50px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      margin: 0;
+      top: -8px;
+      left: -1px;
+    }
+  }
+}
+
+.production__video {
+  margin-bottom: 19px;
+
+  @include min($tablet) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @include min($desktop) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.production__video-wrapper {
+  display: block;
+  position: relative;
+
   &::after {
     position: absolute;
     content: "";
-    top: 100px;
+    top: 30px;
     left: 70px;
     display: block;
     width: 120px;
@@ -74,61 +118,15 @@
   }
 
   @include min($tablet) {
-    margin-bottom: 10px;
-    font-size: 20px;
-    line-height: 24px;
-
-    &::before {
-      top: -10px;
-      left: 0;
-    }
-
-    &::after {
-      top: -280px;
-      left: 280px;
-    }
-  }
-
-  @include min($desktop) {
-    padding-left: 0;
-    padding-top: 50px;
-    margin-bottom: 35px;
-    font-size: 20px;
-    line-height: 24px;
-
-    &::before {
-      margin: 0;
-      top: 0;
-      left: 0;
-    }
-
-    &::after {
-      top: 135px;
-      left: -479px;
-    }
-  }
-}
-
-.production__video {
-  display: block;
-  position: relative;
-  margin-bottom: 19px;
-
-  &::after {
-    display: inline;
-    position: absolute;
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    z-index: 5;
-  }
-
-  @include min($tablet) {
     order: -1;
     width: 668px;
     height: 455px;
     margin-bottom: 53px;
+
+    &::after {
+      top: 195px;
+      left: 274px;
+    }
   }
 
   @include min($desktop) {
@@ -137,6 +135,11 @@
     height: 455px;
     top: 0;
     left: 0;
+
+    &::after {
+      top: 180px;
+      left: 280px;
+    }
   }
 }
 
