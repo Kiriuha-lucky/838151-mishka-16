@@ -51,6 +51,7 @@
 
 .page-header__nav-toggle {
   @include btn-reset;
+  display: none;
   right: 15px;
   top: -55px;
   position: absolute;
@@ -62,7 +63,11 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-  &--close {
+  &--open {
+    display: block;
+  }
+
+  &--closed {
     background-image: url("../img/icon-menu-close.svg");
   }
 
@@ -73,16 +78,10 @@
 
 .page-header__nav-list {
   @include list-reset;
+  display: block;
+  width: 320px;
 
-  &--open {
-    display: block;
-    width: 320px;
-    position: absolute;
-    background-color: white;
-    z-index: 2;
-  }
-
-  &--close {
+  &--closed {
     display: none;
   }
 
