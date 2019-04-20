@@ -311,7 +311,30 @@
           </a>
         </p>
       </footer>
+      <form class="add-to-cart-form modal" method="post" action="https://echo.htmlacademy.ru">
+        <h2 class="add-to-cart-form__title">Добавить в корзину</h2>
+        <fieldset class="add-to-cart-form__group">
+          <legend class="add-to-cart-form__group-title">Выберите размер:</legend>
+          <ul class="add-to-cart-form__size-list">
+            <li class="add-to-cart-form__size-item">
+              <input type="radio" id="size-s" class="add-to-cart-form__radio visually-hidden" name="filter-size" value="s" checked="checked">
+              <label class="add-to-cart-form__size-label" for="size-s">s</label>
+            </li>
+            <li class="add-to-cart-form__size-item">
+              <input type="radio" id="size-m" class="add-to-cart-form__radio visually-hidden" name="filter-size" value="m">
+              <label class="add-to-cart-form__size-label" for="size-m">m</label>
+            </li>
+            <li class="add-to-cart-form__size-item">
+              <input type="radio" id="size-l" class="add-to-cart-form__radio visually-hidden" name="filter-size" value="l">
+              <label class="add-to-cart-form__size-label" for="size-l">l</label>
+            </li>
+          </ul>
+          <button type="submit" class="add-to-cart-form__button button">Добавить</button>
+        </fieldset>
+      </form>
+      <div class="overlay"></div>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="../js/add_to_cart_product_snippet.js"></script>
+    <script src="../js/open_menu.js"></script>
   </body>
 </html>
