@@ -20,4 +20,29 @@
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
+
+  @include min($tablet) {
+    margin: 0;
+    width: 83.5px;
+    border: none;
+  }
+}
+
+.slider__btn-group {
+  margin-bottom: 30px;
+
+  @include min($tablet) {
+    position: absolute;
+    right: 50px;
+    top: 357px;
+  }
+
+  @include min($desktop) {
+    right: 0;
+    top: 308px;
+  }
+}
+
+.slider-btn {
+  cursor: pointer;
 }

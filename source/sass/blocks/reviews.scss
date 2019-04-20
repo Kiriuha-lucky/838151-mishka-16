@@ -1,5 +1,24 @@
 .reviews {
   width: 260px;
+
+  @include min($tablet) {
+    position: relative;
+    width: 668px;
+    min-height: 377px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @include min($desktop) {
+    width: 775px;
+    padding-left: 175px;
+    padding-top: 70px;
+    padding-right: 100px;
+  }
 }
 
 .reviews__slider {
@@ -12,7 +31,21 @@
   line-height: 30px;
   font-weight: 700;
   color: black;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+
+  @include min($tablet) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-right: 200px;
+    margin-bottom: 47px;
+  }
+
+  @include min($desktop) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 48px;
+  }
 }
 
 .reviews__text {
@@ -21,7 +54,19 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+  letter-spacing: 0.025em;
+
+  @include min($tablet) {
+    width: 668px;
+    font-size: 17px;
+    margin-bottom: 54px;
+  }
+
+  @include min($desktop) {
+    width: 775px;
+    margin-bottom: 37px;
+  }
 }
 
 .reviews__author-name {
@@ -30,16 +75,28 @@
   font-weight: 700;
   color: black;
   margin-bottom: 15px;
+  letter-spacing: 0.04em;
+  font-style: normal;
 }
 
 .reviews__author-user-name {
+  display: block;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
   color: #444444;
-  margin-bottom: 35px;
+  margin-bottom: 0;
 }
 
-.slider-btn {
-  margin-bottom: 38px;
+.reviews__write-link {
+  @include min($tablet) {
+    width: 175px;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+  }
+
+  @include min($desktop) {
+    right: 0;
+  }
 }

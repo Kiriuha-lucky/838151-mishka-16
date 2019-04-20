@@ -4,13 +4,45 @@ a {
 
 body {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
-  font-family: "Opensasns", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: black;
   letter-spacing: 0;
-  outline: 3px solid blue;
+}
+
+
+.container {
+  @media (max-width: 320px) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @include min($tablet) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @include min($desktop) {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 10;
+
+  &--open {
+    display: block;
+  }
 }

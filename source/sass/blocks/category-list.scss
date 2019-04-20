@@ -1,8 +1,14 @@
 .category-list {
   @include list-reset;
+  width: 320px;
   font-size: 19px;
   line-height: 24px;
   color: white;
+
+  @include min($tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .category-list__link {
@@ -11,10 +17,11 @@
   display: inline-block;
 
   width: 140px;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-right: 150px;
   padding-bottom: 30px;
   padding-left: 30px;
+  letter-spacing: 0.09em;
 
   cursor: pointer;
 
@@ -23,7 +30,7 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 22px;
 
     width: 70px;
     height: 70px;
@@ -70,5 +77,22 @@
   &--toys:active {
     background-color: #46c1ae;
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @include min($tablet) {
+    width: 139px;
+    padding-right: 165px;
+    font-size: 20px;
+    line-height: 30px;
+    flex-grow: 1;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: 100% 120%;
+  }
+
+  @include min($desktop) {
+    width: 145px;
+    padding-right: 350px;
   }
 }

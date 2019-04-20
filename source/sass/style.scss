@@ -1,14 +1,15 @@
+@import "variables.scss";
+@import "mixins.scss";
 @import "blocks/base.scss";
 @import "blocks/fonts.scss";
 @import "blocks/global.scss";
-@import "mixins.scss";
 @import "blocks/social-list.scss";
 @import "blocks/page-header.scss";
+@import "blocks/category-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/button.scss";
 @import "blocks/modal.scss";
-@import "blocks/category-list.scss";
 @import "blocks/product-card.scss";
 @import "blocks/about-us.scss";
 @import "blocks/product-snippet.scss";

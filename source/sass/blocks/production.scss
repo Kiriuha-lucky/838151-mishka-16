@@ -1,9 +1,27 @@
 .production {
   width: 260px;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
+
+  @include min($tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    border: none;
+    padding-top: 0;
+  }
+
+  @include min($desktop) {
+    position: relative;
+    width: 235px;
+    min-height: 410px;
+    padding-left: 760px;
+    padding-right: 55px;
+    padding-bottom: 0;
+    padding-top: 45px;
+  }
 }
 
 .production__title {
@@ -30,10 +48,54 @@
     background-position: 50% 50%;
   }
 
+  @include min($tablet) {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: -10px;
+      left: 0;
+    }
+  }
+
+  @include min($desktop) {
+    padding-left: 0;
+    padding-top: 50px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      margin: 0;
+      top: -8px;
+      left: -1px;
+    }
+  }
+}
+
+.production__video {
+  margin-bottom: 19px;
+
+  @include min($tablet) {
+    width: 668px;
+    height: 455px;
+  }
+
+  @include min($desktop) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.production__video-wrapper {
+  display: block;
+  position: relative;
+
   &::after {
     position: absolute;
     content: "";
-    top: 100px;
+    top: 30px;
     left: 70px;
     display: block;
     width: 120px;
@@ -54,10 +116,31 @@
     transform: scale(0.8);
     opacity: 0.3;
   }
-}
 
-.production__video {
-  margin-bottom: 30px;
+  @include min($tablet) {
+    order: -1;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 53px;
+
+    &::after {
+      top: 195px;
+      left: 274px;
+    }
+  }
+
+  @include min($desktop) {
+    position: absolute;
+    width: 682px;
+    height: 455px;
+    top: 0;
+    left: 0;
+
+    &::after {
+      top: 180px;
+      left: 280px;
+    }
+  }
 }
 
 .production__text {
@@ -67,11 +150,32 @@
   font-weight: 400;
   color: #444444;
   padding-left: 32px;
-  padding-right: 32px;
-  margin-bottom: 30px;
+  padding-right: 48px;
+  margin-bottom: 23px;
+  letter-spacing: 0.01em;
+
+  @include min($tablet) {
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @include min($desktop) {
+    padding: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .production__link {
   margin: 0 auto;
   width: 195px;
+
+  @include min($tablet) {
+    width: 588px;
+    margin-bottom: 13px;
+  }
+
+  @include min($desktop) {
+    width: 230px;
+  }
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 260px;
+  min-height: 372px;
   border-bottom: 1px solid #ececec;
 
   &:hover {
@@ -10,6 +11,25 @@
 
   &:active {
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.61);
+  }
+
+  @include min($tablet) {
+    position: relative;
+    min-height: 284px;
+    width: 284px;
+    padding-left: 359px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @include min($desktop) {
+    min-height: 632px;
+    padding-top: 0;
+    padding-bottom: 25px;
+    width: 265px;
+    padding-left: 25px;
+    outline: 1px solid #dfdfdf;
   }
 }
 
@@ -21,7 +41,21 @@
   color: black;
   padding-left: 28px;
   padding-right: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
+  letter-spacing: 0.055em;
+
+  @include min_tablet_max_desktop {
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include min($desktop) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
 }
 
 .product-snippet__properties {
@@ -33,38 +67,75 @@
   line-height: 30px;
   font-weight: 400;
   color: rgb(68, 68, 68);
-  border-bottom: 1px solid #ededed;
-  padding-bottom: 22px;
-  margin-bottom: 22px;
+
+  @include min($tablet) {
+    width: 270px;
+    margin: 0;
+  }
+
+  @include min($desktop) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .product-snippet__price {
-  position: relative;
   margin: 0 auto;
+  margin-top: 18px;
   width: 204px;
-  padding-bottom: 30px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 15px;
 
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   color: black;
+  border-top: 1px solid #ededed;
+
+  @include min_tablet_max_desktop {
+    margin: 0;
+    margin-top: auto;
+    width: 280px;
+    padding: 0;
+    padding-top: 19px;
+  }
+
+  @include min($desktop) {
+    width: 270px;
+    margin: 0;
+    margin-top: auto;
+    padding: 0;
+    padding-top: 16px;
+  }
 }
 
 .product-snippet__image {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+
+  @include min_tablet_max_desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 334px;
+    height: 334px;
+  }
+
+  @include min($desktop) {
+    margin-left: -25px;
+    width: 315px;
+    height: 462px;
+    margin-bottom: 17px;
+  }
 }
 
 .product-snippet__button {
   @include btn-reset;
-  position: absolute;
 
   width: 30px;
   height: 30px;
-  top: 0;
-  // transform: translateY(-100%);
-  right: 0;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  z-index: 5;
   cursor: pointer;
 }

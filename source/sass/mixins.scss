@@ -10,6 +10,14 @@
   background-color: transparent;
 }
 
-@mixin outline {
-  outline: 2px solid green;
+@mixin min_tablet_max_desktop {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin min($media) {
+  @media (min-width: $media) {
+    @content;
+  }
 }

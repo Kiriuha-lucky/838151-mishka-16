@@ -1,3 +1,26 @@
 .catalog {
   width: 260px;
+
+  @include min_tablet_max_desktop {
+    width: 668px;
+    margin-bottom: 38px;
+  }
+
+  @include min($desktop) {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+  }
+}
+
+.catalog__product-snippet {
+  margin-bottom: 30px;
+
+  @include min_tablet_max_desktop {
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
