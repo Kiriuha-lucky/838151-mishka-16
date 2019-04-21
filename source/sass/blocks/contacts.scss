@@ -120,6 +120,8 @@
 }
 
 .contacts__map {
+  width: 320px;
+  height: 457px;
   margin-bottom: 28px;
 
   @include min_tablet_max_desktop {
