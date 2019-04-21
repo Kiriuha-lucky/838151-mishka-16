@@ -11,6 +11,12 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: 350px 457px;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+    (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/review@2x.jpg");
   }
 
   @include min($desktop) {

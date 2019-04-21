@@ -3,12 +3,16 @@
   color: #444444;
 
   @include min($tablet) {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 668px;
+    min-height: 506px;
   }
 
   @include min($desktop) {
     width: 875px;
+    min-height: 586px;
     padding-left: 175px;
     padding-top: 50px;
   }
@@ -87,11 +91,7 @@
 
   @include min($tablet) {
     width: 290px;
-    margin-bottom: 53px;
-  }
-
-  @include min($desktop) {
-    margin-bottom: 103px;
+    margin-bottom: 0;
   }
 }
 
@@ -143,6 +143,7 @@
   letter-spacing: 0.02em;
 
   @include min($tablet) {
+    margin-top: auto;
     width: 290px;
     font-size: 20px;
     line-height: 24px;
