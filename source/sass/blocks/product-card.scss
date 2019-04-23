@@ -7,7 +7,7 @@
     flex-direction: column;
     position: relative;
     width: 668px;
-    min-height: 506px;
+    min-height: 513px;
   }
 
   @include min($desktop) {
@@ -25,7 +25,6 @@
   line-height: 25px;
   color: black;
   font-weight: 700;
-  letter-spacing: 0.015em;
 
   @include min($tablet) {
     font-size: 43px;
@@ -71,8 +70,7 @@
   line-height: 24px;
   color: #444444;
   font-weight: 400;
-  margin-bottom: 20px;
-  letter-spacing: 0.03em;
+  margin-bottom: 23px;
 
   @include min($tablet) {
     width: 290px;
@@ -87,7 +85,7 @@
 }
 
 .product-card__specifications {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 
   @include min($tablet) {
     width: 290px;
@@ -98,7 +96,8 @@
 .product-card__property,
 .product-card__value {
   text-align: left;
-  padding-right: 30px;
+  padding-right: 25px;
+  padding-left: 0;
   padding-top: 5px;
   padding-bottom: 10px;
   border-bottom: 1px solid #e5e5e5;

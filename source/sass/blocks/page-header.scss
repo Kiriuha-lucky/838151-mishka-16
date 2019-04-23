@@ -130,7 +130,6 @@
   color: black;
   font-weight: 700;
   cursor: pointer;
-  letter-spacing: 0.05em;
 
   &:hover,
   &:focus {
@@ -152,7 +151,7 @@
   }
 
   @include min_tablet_max_desktop {
-    padding-left: 25px;
+    padding-left: 34px;
     border: none;
   }
 }
@@ -172,6 +171,7 @@
       font-size: 15px;
       line-height: 24px;
       padding-left: 0;
+      padding-top: 20px;
     }
 
     &:nth-child(2) {
@@ -181,11 +181,12 @@
     &:nth-child(2) .page-header__nav-link {
       font-size: 15px;
       line-height: 24px;
-      padding-left: 30px;
+      padding-left: 6px;
+      padding-top: 20px;
     }
 
     &:nth-child(3) {
-      margin-left: 325px;
+      margin-left: 320px;
     }
 
     &:nth-child(3) .page-header__nav-link {
@@ -233,6 +234,10 @@
 
 .page-header__nav-icon {
   margin-right: 20px;
+
+  @include min($tablet) {
+    margin-right: 24px;
+  }
 }
 
 .page-header__nav-icon--search {

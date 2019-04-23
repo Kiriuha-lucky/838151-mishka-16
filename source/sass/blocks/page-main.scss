@@ -20,10 +20,10 @@
   display: block;
 
   width: 260px;
-  padding-top: 66px;
+  padding-top: 75px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 122px;
 
   text-align: center;
 
@@ -60,7 +60,7 @@
     padding-left: 85px;
     padding-right: 85px;
     padding-bottom: 0;
-    margin-top: -55px;
+    margin-top: -46px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-color: #f9f9f9;
     background-size: cover;
@@ -216,7 +216,7 @@
 
 .page-main__section-nav {
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @include min($tablet) {
     margin-bottom: 48px;

@@ -61,7 +61,6 @@
   font-weight: 400;
   color: #444444;
   margin-bottom: 24px;
-  letter-spacing: 0.025em;
 
   @include min($tablet) {
     width: 668px;
@@ -81,7 +80,6 @@
   font-weight: 700;
   color: black;
   margin-bottom: 15px;
-  letter-spacing: 0.04em;
   font-style: normal;
 }
 
