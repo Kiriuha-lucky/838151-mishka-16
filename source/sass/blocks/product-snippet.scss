@@ -1,35 +1,18 @@
 .product-snippet {
-  display: flex;
-  flex-direction: column;
   width: 260px;
   min-height: 372px;
-  border-bottom: 1px solid #ececec;
-
-  &:hover {
-    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.61);
-  }
-
-  &:active {
-    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.61);
-  }
 
   @include min($tablet) {
-    position: relative;
-    min-height: 284px;
-    width: 284px;
-    padding-left: 359px;
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    min-height: 0;
+    width: 668px;
   }
 
   @include min($desktop) {
-    min-height: 632px;
-    padding-top: 0;
-    padding-bottom: 25px;
-    width: 265px;
-    padding-left: 25px;
-    outline: 1px solid #dfdfdf;
+    flex-direction: column;
+    min-height: 659px;
+    width: 315px;
   }
 }
 
@@ -39,15 +22,13 @@
   line-height: 24px;
   font-weight: 700;
   color: black;
-  padding-left: 28px;
-  padding-right: 28px;
   margin-bottom: 6px;
-  letter-spacing: 0.055em;
 
   @include min_tablet_max_desktop {
     padding: 0;
     font-size: 20px;
     line-height: 24px;
+    padding-right: 36px;
   }
 
   @include min($desktop) {
@@ -55,14 +36,22 @@
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 5px;
+    padding-right: 27px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 .product-snippet__properties {
   @include list-reset;
-  width: 204px;
 
-  margin: 0 auto;
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
@@ -71,6 +60,8 @@
   @include min($tablet) {
     width: 270px;
     margin: 0;
+    font-size: 15px;
+    line-height: 30px;
   }
 
   @include min($desktop) {
@@ -80,14 +71,14 @@
 }
 
 .product-snippet__price {
-  margin: 0 auto;
   margin-top: 18px;
   width: 204px;
   padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 15px;
+  padding-top: 21px;
+  letter-spacing: 0.03em;
 
   font-size: 15px;
   line-height: 24px;
@@ -95,47 +86,92 @@
   color: black;
   border-top: 1px solid #ededed;
 
-  @include min_tablet_max_desktop {
-    margin: 0;
+  @include min($tablet) {
+    margin: 0 auto;
     margin-top: auto;
-    width: 280px;
+    width: 270px;
     padding: 0;
-    padding-top: 19px;
+    padding-top: 21px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.035em;
   }
 
   @include min($desktop) {
-    width: 270px;
+    width: 255px;
     margin: 0;
     margin-top: auto;
     padding: 0;
-    padding-top: 16px;
+    padding-top: 20px;
   }
 }
 
 .product-snippet__image {
-  margin-bottom: 18px;
-
-  @include min_tablet_max_desktop {
-    position: absolute;
-    top: 0;
-    left: 0;
+  @include min($tablet) {
+    display: block;
     width: 334px;
-    height: 334px;
   }
 
   @include min($desktop) {
-    margin-left: -25px;
+    margin: 0;
     width: 315px;
     height: 462px;
-    margin-bottom: 17px;
   }
 }
 
 .product-snippet__button {
   @include btn-reset;
+  padding: 0;
 
-  width: 30px;
-  height: 30px;
   z-index: 5;
   cursor: pointer;
+  fill: #d3d2d2;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+.product-snippet__wrapper {
+  outline: 1px solid #ececec;
+  margin: 0 auto;
+  width: 202px;
+  min-height: 151px;
+  margin-top: -9px;
+  padding-top: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+  display: flex;
+  flex-direction: column;
+
+  @include min($tablet) {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-top: 26px;
+    padding-bottom: 27px;
+    margin: 0;
+    width: 325px;
+  }
+
+  @include min($desktop) {
+    width: 257px;
+    min-height: 143px;
+
+    &:hover {
+      box-shadow: 0 5px 13px rgba(0, 0, 0, 0.61);
+    }
+
+    &:active {
+      box-shadow: 0 5px 6px rgba(0, 0, 0, 0.61);
+    }
+  }
 }

@@ -19,14 +19,13 @@
   margin: 0 auto;
   display: block;
 
-  width: 320px;
-  padding-top: 66px;
+  width: 260px;
+  padding-top: 75px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 122px;
 
   text-align: center;
-  letter-spacing: 0.04em;
 
   color: black;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -45,6 +44,7 @@
   }
 
   &--inner-page {
+    padding-top: 74px;
     min-height: 0;
     padding-bottom: 75px;
     margin-bottom: 30px;
@@ -60,7 +60,7 @@
     padding-left: 85px;
     padding-right: 85px;
     padding-bottom: 0;
-    margin-top: -55px;
+    margin-top: -46px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-color: #f9f9f9;
     background-size: cover;
@@ -216,7 +216,7 @@
 
 .page-main__section-nav {
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @include min($tablet) {
     margin-bottom: 48px;
@@ -294,7 +294,11 @@
 .page-main__catalog {
   margin: 0 auto;
 
+  @include min($tablet) {
+    margin-bottom: 53px;
+  }
+
   @include min($desktop) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }
