@@ -12,6 +12,16 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   border: 1px solid #ececec;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   &--prev {
     background-image: url("../img/icon-left-arrow.svg");

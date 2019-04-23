@@ -19,14 +19,13 @@
   margin: 0 auto;
   display: block;
 
-  width: 320px;
+  width: 260px;
   padding-top: 66px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 120px;
 
   text-align: center;
-  letter-spacing: 0.04em;
 
   color: black;
   background-image: url("../img/hero-mobile@1x.jpg");
@@ -45,6 +44,7 @@
   }
 
   &--inner-page {
+    padding-top: 74px;
     min-height: 0;
     padding-bottom: 75px;
     margin-bottom: 30px;
@@ -294,7 +294,11 @@
 .page-main__catalog {
   margin: 0 auto;
 
+  @include min($tablet) {
+    margin-bottom: 53px;
+  }
+
   @include min($desktop) {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }

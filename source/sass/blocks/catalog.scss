@@ -3,18 +3,23 @@
 
   @include min_tablet_max_desktop {
     width: 668px;
-    margin-bottom: 38px;
   }
 
   @include min($desktop) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 .catalog__product-snippet {
   margin-bottom: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   @include min_tablet_max_desktop {
     margin-bottom: 54px;
@@ -22,5 +27,9 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @include min($desktop) {
+    margin-left: 52px;
   }
 }
