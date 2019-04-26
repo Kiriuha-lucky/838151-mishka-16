@@ -6,15 +6,19 @@
   color: white;
 
   @include min($tablet) {
+    width: 668px;
     display: flex;
-    justify-content: center;
+  }
+
+  @include min($desktop) {
+    width: 1050px;
   }
 }
 
 .category-list__link {
   position: relative;
   color: inherit;
-  display: inline-block;
+  display: block;
 
   width: 140px;
   padding-top: 27px;
@@ -84,7 +88,6 @@
     padding-right: 165px;
     font-size: 20px;
     line-height: 30px;
-    flex-grow: 1;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;

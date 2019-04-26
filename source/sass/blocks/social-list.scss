@@ -2,9 +2,12 @@
   @include list-reset;
   display: flex;
   justify-content: center;
-  align-items: center;
 
   width: 260px;
+
+  @include min($desktop) {
+    height: 30px;
+  }
 }
 
 .social-list__link {
