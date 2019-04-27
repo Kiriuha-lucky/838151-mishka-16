@@ -142,11 +142,15 @@
   letter-spacing: 0.02em;
 
   @include min($tablet) {
-    margin-top: auto;
+    margin-top: 53px;
     width: 290px;
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 34px;
+  }
+
+  @include min($desktop) {
+    margin-top: 104px;
   }
 }
 
