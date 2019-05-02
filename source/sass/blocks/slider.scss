@@ -13,6 +13,7 @@
   background-repeat: no-repeat;
   border: 1px solid #ececec;
   cursor: pointer;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -20,7 +21,7 @@
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: 0.3;
   }
 
   &--prev {

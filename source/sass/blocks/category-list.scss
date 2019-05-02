@@ -16,6 +16,7 @@
 }
 
 .category-list__link {
+
   position: relative;
   color: inherit;
   display: block;
@@ -55,16 +56,6 @@
     opacity: 0.3;
   }
 
-  &:hover,
-  &:focus {
-    background-color: #59d5bc;
-  }
-
-  &:active {
-    background-color: #59d5bc;
-    color: rgba(255, 255, 255, 0.3);
-  }
-
   &--toys {
     background-color: #56c3b2;
   }
@@ -88,14 +79,24 @@
     padding-right: 165px;
     font-size: 20px;
     line-height: 30px;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: 100% 120%;
   }
 
   @include min($desktop) {
     width: 145px;
     padding-right: 350px;
+    background-position: 100% 104px;
+    background-size: 235%;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus {
+      background-color: #59d5bc;
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      background-color: #59d5bc;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
