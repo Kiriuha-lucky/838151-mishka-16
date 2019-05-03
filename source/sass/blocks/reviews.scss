@@ -38,13 +38,13 @@
   font-weight: 700;
   color: black;
   margin-bottom: 24px;
-  letter-spacing: 0.02em;
 
   @include min($tablet) {
     font-size: 43px;
     line-height: 50px;
     padding-right: 200px;
     margin-bottom: 47px;
+    margin-left: -5px;
   }
 
   @include min($desktop) {
@@ -60,17 +60,17 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 
   @include min($tablet) {
     width: 668px;
     font-size: 17px;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   @include min($desktop) {
     width: 775px;
-    margin-bottom: 37px;
+    margin-bottom: 40px;
   }
 }
 
@@ -79,8 +79,16 @@
   line-height: 24px;
   font-weight: 700;
   color: black;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
   font-style: normal;
+
+  @include min($tablet) {
+    letter-spacing: 0.04em;
+  }
+
+  @include min($desktop) {
+    letter-spacing: 0;
+  }
 }
 
 .reviews__author-user-name {

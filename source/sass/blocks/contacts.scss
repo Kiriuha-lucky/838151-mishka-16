@@ -60,7 +60,7 @@
   @include min_tablet_max_desktop {
     font-size: 43px;
     line-height: 50px;
-    margin-left: 50px;
+    margin-left: 46px;
     margin-right: 50px;
     margin-bottom: 46px;
   }
@@ -83,7 +83,7 @@
 
   @media (min-width: 768px) and (max-width: 1149px) {
     margin: 0 auto;
-    width: 668px;
+    width: 675px;
     font-size: 17px;
     margin-bottom: 25px;
   }
@@ -95,16 +95,38 @@
 }
 
 .contacts__method {
-  padding-right: 23px;
+  padding-right: 24px;
 
   text-align: left;
   vertical-align: top;
   font-weight: 400;
+  white-space: nowrap;
+
+  @include min($tablet) {
+    padding-right: 19px;
+  }
+
+  @include min($desktop) {
+    padding-right: 28px;
+  }
 }
 
 .contacts__value {
   padding-bottom: 26px;
   vertical-align: top;
+}
+
+.contacts__value--adress {
+  padding-right: 26px;
+
+  @include min($tablet) {
+    padding-right: 20px;
+  }
+
+  @include min($desktop) {
+    padding-right: 35px;
+    letter-spacing: 0.05em;
+  }
 }
 
 .contacts__e-mail {
@@ -121,12 +143,16 @@
     color: rgba(70, 193, 174, 0.3);
     border-bottom: 1px solid rgba(70, 193, 174, 0.3);
   }
+
+  @include min($desktop) {
+    letter-spacing: 0.065em;
+  }
 }
 
 .contacts__map {
   width: 320px;
   height: 457px;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-size: cover;
 
@@ -185,16 +211,18 @@
     display: inline-block;
     vertical-align: top;
     align: center;
-    width: 330px;
+    width: 333px;
   }
 }
 
 .contacts__table br {
+  display: none;
+
   @include min_tablet_max_desktop {
-    display: none;
+    display: inline;
   }
 
-  @include min($desktop) {
-    display: none;
-  }
+  // @include min($desktop) {
+  //   display: none;
+  // }
 }

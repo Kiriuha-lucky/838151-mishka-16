@@ -35,7 +35,7 @@
   &::after {
     position: absolute;
     top: 50%;
-    right: 22px;
+    right: 25px;
 
     width: 70px;
     height: 70px;
@@ -76,9 +76,11 @@
 
   @include min($tablet) {
     width: 139px;
-    padding-right: 165px;
+    padding-right: 161px;
     font-size: 20px;
     line-height: 30px;
+    padding-left: 34px;
+    padding-bottom: 35px;
   }
 
   @include min($desktop) {

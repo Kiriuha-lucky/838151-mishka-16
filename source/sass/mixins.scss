@@ -11,7 +11,7 @@
 }
 
 @mixin min_tablet_max_desktop {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: 1149px) {
     @content;
   }
 }
