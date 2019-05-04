@@ -52,7 +52,6 @@
     line-height: 24px;
     padding-left: 98px;
     padding-right: 98px;
-    letter-spacing: 0.01em;
 
     &::before {
       top: -10px;
@@ -177,13 +176,11 @@
   padding-left: 32px;
   padding-right: 33px;
   margin-bottom: 27px;
-  letter-spacing: 0.01em;
 
   @include min($tablet) {
     margin-bottom: 33px;
     font-size: 15px;
     line-height: 30px;
-    letter-spacing: 0;
   }
 
   @include min($desktop) {

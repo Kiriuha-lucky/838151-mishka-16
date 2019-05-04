@@ -81,14 +81,6 @@
   color: black;
   margin-bottom: 3px;
   font-style: normal;
-
-  @include min($tablet) {
-    letter-spacing: 0.04em;
-  }
-
-  @include min($desktop) {
-    letter-spacing: 0;
-  }
 }
 
 .reviews__author-user-name {
@@ -102,10 +94,10 @@
 
 .reviews__write-link {
   @include min($tablet) {
-    width: 175px;
+    width: 173px;
     position: absolute;
     top: 80px;
-    right: 50px;
+    right: 49px;
   }
 
   @include min($desktop) {
