@@ -1,18 +1,25 @@
 .page-footer {
   margin: 0 auto;
   padding-top: 26px;
-  min-width: 320px;
+  width: 100%;
   background-color: #f1f1f1;
+
+  @include min($tablet) {
+
+    min-height: 145px;
+    padding-top: 0;
+  }
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  width: 320px;
 
   @include min($tablet) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 145px;
-    padding-top: 0;
     width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
 
   @include min($desktop) {

@@ -6,11 +6,7 @@
   font-weight: 700;
 
   @include min($tablet) {
-    width: 768px;
-  }
-
-  @include min($desktop) {
-    width: 1150px;
+    width: 100%;
   }
 }
 
@@ -25,7 +21,12 @@
     margin-bottom: 25px;
   }
 
+  &--color {
+    margin-bottom: 23px;
+  }
+
   @include min($tablet) {
+    margin: 0 auto;
     width: 718px;
     padding-top: 14px;
     padding-bottom: 2px;
@@ -34,10 +35,17 @@
     margin-bottom: 25px;
 
     &--color {
+      width: 100%;
+      margin-bottom: 51px;
       padding-top: 65px;
       padding-bottom: 8px;
-      margin-bottom: 53px;
+      padding-left: 0;
       background-color: #f1f1f1;
+    }
+
+    &--color .form__subgroup {
+      margin: 0 auto;
+      width: 668px;
     }
 
     &--name {
@@ -68,6 +76,15 @@
     &--dop {
       margin-bottom: 60px;
     }
+
+    &--color {
+      width: 100%;
+    }
+
+    &--color .form__subgroup {
+      margin: 0 auto;
+      width: 1050px;
+    }
   }
 }
 
@@ -76,14 +93,6 @@
 
   @include min($tablet) {
     display: block;
-  }
-}
-
-.form__group--color {
-  margin-bottom: 23px;
-
-  @include min($tablet) {
-    margin-bottom: 51px;
   }
 }
 
@@ -258,7 +267,7 @@
   @include min($tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: 180px;
+    width: 170px;
     padding-left: 82px;
     margin-bottom: 38px;
 
@@ -507,7 +516,21 @@
   margin-bottom: 24px;
 
   @include min($tablet) {
+    padding-left: 0;
+    width: 100%;
     margin-bottom: 0;
+  }
+}
+
+.form__group--tel .form__subgroup,
+.form__group--mail .form__subgroup {
+  @include min($tablet) {
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @include min($desktop) {
+    width: 1050px;
   }
 }
 
@@ -524,6 +547,8 @@
   margin-bottom: 24px;
 
   @include min($tablet) {
+    padding-left: 0;
+    width: 100%;
     margin-bottom: 36px;
   }
 }
