@@ -35,7 +35,7 @@
 
     &--color {
       padding-top: 65px;
-      padding-bottom: 5px;
+      padding-bottom: 8px;
       margin-bottom: 53px;
       background-color: #f1f1f1;
     }
@@ -45,29 +45,29 @@
     }
 
     &--tel {
-      padding-top: 56px;
+      padding-top: 66px;
       margin-bottom: 0;
       background-color: #f1f1f1;
     }
 
     &--mail {
-      padding-top: 15px;
-      padding-bottom: 42px;
+      padding-top: 36px;
+      padding-bottom: 47px;
       margin-bottom: 38px;
       background-color: #f1f1f1;
     }
 
     &--dop {
-      margin-bottom: 57px;
+      margin-bottom: 64px;
     }
   }
 
   @include min($desktop) {
     width: 1100px;
-  }
 
-  &--dop {
-    margin-bottom: 54px;
+    &--dop {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -79,14 +79,27 @@
   }
 }
 
+.form__group--color {
+  margin-bottom: 23px;
+
+  @include min($tablet) {
+    margin-bottom: 51px;
+  }
+}
+
+.form__group--name .form__group-title {
+  margin-bottom: 26px;
+}
+
 .form__group-title {
   margin: 0;
   display: block;
 
-  padding-right: 30px;
+  padding-right: 17px;
   margin-bottom: 23px;
   vertical-align: middle;
   line-height: 19px;
+  padding-left: 0;
 
   color: #63d1bb;
   text-transform: uppercase;
@@ -109,7 +122,7 @@
   @include min($tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: 501px;
+    width: 525px;
   }
 
   @include min($desktop) {
@@ -180,7 +193,6 @@
     line-height: 18px;
     padding-left: 80px;
     width: 350px;
-    letter-spacing: 0.02em;
 
     &::after {
       width: 20px;
@@ -246,9 +258,8 @@
   @include min($tablet) {
     display: flex;
     flex-wrap: wrap;
-    width: 168px;
+    width: 180px;
     padding-left: 82px;
-    letter-spacing: 0.05em;
     margin-bottom: 38px;
 
     &::before {
@@ -285,7 +296,6 @@
     display: inline;
     font-size: 19px;
     line-height: 18px;
-    letter-spacing: 0.07em;
     margin-bottom: 0;
   }
 }
@@ -303,8 +313,7 @@
 
   @include min($tablet) {
     flex-grow: 1;
-    margin-left: 23px;
-    letter-spacing: 0.02em;
+    margin-left: 26px;
     font-size: 19px;
     line-height: 18px;
     padding-bottom: 13px;
@@ -319,7 +328,6 @@
       margin-left: 0;
       padding-right: 70px;
       padding-bottom: 15px;
-      letter-spacing: 0;
       font-size: 17px;
       line-height: 19px;
     }
@@ -331,7 +339,6 @@
       margin-left: 0;
       padding-bottom: 15px;
       padding-right: 70px;
-      letter-spacing: 0.07em;
       font-size: 17px;
       line-height: 19px;
     }
@@ -370,7 +377,8 @@
   outline: none;
   width: 226px;
   padding: 15px;
-  margin-bottom: -7px;
+  min-height: 108px;
+  margin-bottom: -13px;
 
   font-size: inherit;
   line-height: inherit;
@@ -381,7 +389,6 @@
     width: 467px;
     font-size: 19px;
     line-height: 19px;
-    letter-spacing: 0.03em;
     min-height: 108px;
 
     &:hover,
@@ -411,12 +418,12 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 0;
-    letter-spacing: 0.02em;
   }
 }
 
 .form__button {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+  width: 260px;
 
   @include min($tablet) {
     order: -1;
@@ -426,11 +433,18 @@
 }
 
 .form__group-icon {
-  display: none;
+  display: block;
+  margin-left: -35px;
+  position: absolute;
+  top: -4px;
+  right: 7px;
 
   @include min($tablet) {
-    display: block;
-    margin-left: -50px;
+    right: 73px;
+  }
+
+  @include min($desktop) {
+    right: 231px;
   }
 }
 
@@ -447,10 +461,8 @@
 }
 
 .form__subgroup {
-  @include min($tablet) {
-    display: flex;
-    align-items: baseline;
-  }
+  position: relative;
+  display: flex;
 }
 
 .form__wrapper {
@@ -479,5 +491,45 @@
 
   @include min($desktop) {
     width: 700px;
+  }
+}
+
+.form__group--tel .form__group-title {
+  margin-bottom: 19px;
+  padding-right: 28px;
+
+  @include min($tablet) {
+    padding-right: 0;
+  }
+}
+
+.form__group--tel {
+  margin-bottom: 24px;
+
+  @include min($tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.form__group--mail .form__group-title {
+  margin-bottom: 20px;
+  padding-right: 24px;
+
+  @include min($tablet) {
+    padding-right: 0;
+  }
+}
+
+.form__group--mail {
+  margin-bottom: 24px;
+
+  @include min($tablet) {
+    margin-bottom: 36px;
+  }
+}
+
+.form__group--dop .form__group-title {
+  @include min($tablet) {
+    padding-top: 15px;
   }
 }

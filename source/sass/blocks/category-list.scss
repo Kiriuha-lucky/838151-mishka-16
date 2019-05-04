@@ -84,11 +84,11 @@
   }
 
   @include min($desktop) {
-    width: 145px;
+    width: 141px;
     padding-right: 350px;
     background-position: 100% 104px;
     background-size: 235%;
-    padding-bottom: 32px;
+    padding-bottom: 37px;
 
     &:hover,
     &:focus {

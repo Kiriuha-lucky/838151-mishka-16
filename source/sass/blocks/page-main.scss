@@ -189,7 +189,7 @@
   line-height: 24px;
   margin: 0 auto;
   margin-top: -7px;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 
   @include min($tablet) {
     width: 668px;
@@ -203,7 +203,7 @@
   @include min($desktop) {
     width: 700px;
     margin: 0 auto;
-    margin-top: -5px;
+    margin-top: -8px;
     margin-bottom: 56px;
   }
 }
@@ -293,11 +293,30 @@
   @include min($tablet) {
     margin-bottom: 35px;
     margin-top: -129px;
+
+    &::after {
+      content: "";
+      width: 768px;
+      height: 22px;
+      position: absolute;
+      top: 822px;
+      right: 50%;
+      transform: translateX(50%);
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: 0 0;
+      background-size: cover;
+    }
   }
 
   @include min($desktop) {
-    margin-bottom: 72px;
+    margin-bottom: 67px;
     margin-top: -132px;
+
+    &::after {
+      width: 1150px;
+      height: 38px;
+      top: 817px;
+    }
   }
 }
 
