@@ -1,12 +1,17 @@
 .modal {
-  width: 320px;
+  width: 260px;
   left: 50%;
-  top: 50%;
+  top: 1050px;
   transform: translateY(-169px) translateX(-160px);
 
   @include min($tablet) {
-    width: 570px;
+    width: 510px;
     left: 50%;
     transform: translateX(-285px);
+    top: 1525px;
+  }
+
+  @include min($desktop) {
+    top: 1113px;
   }
 }
